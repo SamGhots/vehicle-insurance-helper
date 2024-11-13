@@ -1,0 +1,142 @@
+.footer-bg {
+  background-color: var(--color-primary-border-bottom);
+  padding: 30px 60px;
+}
+footer{
+margin: 0 auto;
+width: 100%;
+max-width: 1180px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #d2d2d22f;
+  padding-bottom: 52px; /* เพิ่ม padding เพื่อให้เว้นระยะจากเส้น */
+}
+.footer-logo {
+  margin-bottom: 22px;
+}
+.footer-logo img{
+  max-width: 120px;
+  width: 100%;
+}
+.footer-number {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+
+}
+.footer-contact{
+  display: grid;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer-number i{
+  color: var(--color-white);
+  font-size: 20px;
+}
+.footer-number p{
+  font-size: 14px;
+}
+.footer-email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.footer-email p{
+  font-size: 14px;
+}
+
+.footer-email i{
+  font-size: 20px;
+  color: var(--color-white);
+}
+.footer-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px; 
+}
+.footer-line p{
+  font-size: 14px;
+}
+.footer-line  i{
+  font-size: 20px;
+  color: var(--color-white);
+}
+.footer-social{
+  margin-top: 40px;
+}
+.footer-social i{
+  font-size: 20px;
+  color: var(--color-white);
+}
+.footer-copyright{
+  padding: 10px 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+
+.footer-container-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px
+  ;
+}
+
+.footer-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-category-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 12px;
+color: var(--color-white);
+}
+
+.footer-link-item {
+
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .footer-bg{
+    padding: 30px 40px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer-bg{
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width:626px) {
+  .footer-container{
+    display: grid;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bg{
+    padding: 30px 20px;
+  }
+}

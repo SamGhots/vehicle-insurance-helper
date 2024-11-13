@@ -1,0 +1,202 @@
+/* nav */
+nav {
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+}
+.navbar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+}
+
+/*box1📦 icon*/
+.menu-nav i {
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.logo-nav {
+  display: grid;
+}
+.logo-nav a{
+  display: flex;
+}
+.logo-nav img {
+  width: 100px;
+  /* ขนาดที่เหมาะสม */
+}
+
+.text-container {
+  display: none;
+  gap: 30px;
+}
+
+/*box2📦 warn*/
+.contact-box {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  cursor: pointer;
+
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  position: relative;
+  transition: all 0.3s ease;
+  /* การเปลี่ยนแปลงที่ราบรื่น */
+  background-color: transparent;
+  /* พื้นหลังเริ่มต้นเป็นโปร่งใส */
+
+}
+
+/* สไตล์เมื่อชี้เมาส์ไปที่ไอคอน .fa-line */
+.contact-icon:nth-child(1):hover {
+
+  color: #0fdc3f;
+  /* สีเขียวเมื่อชี้เมาส์ไปที่ไอคอน Line */
+  transform: scale(1.6);
+  /* ขยายขนาดไอคอนเป็น 1.6 เท่า */
+}
+
+/* สไตล์เมื่อชี้เมาส์ไปที่ไอคอน .fa-phone */
+.contact-icon:nth-child(2):hover {
+
+  color: #ffc107;
+  /* สีเหลืองเมื่อชี้เมาส์ไปที่ไอคอน Phone */
+  transform: scale(1.6);
+  /* ขยายขนาดไอคอนเป็น 1.6 เท่า */
+}
+
+.contact-icon i {
+  font-size: 20px;
+
+}
+
+.contact-icon img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+/* สไตล์ของเมนูดรอปดาวน์ */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.85);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+
+}
+
+.dropdown-toggle:hover {
+  color: #fff;
+
+}
+
+.dropdown-toggle i {
+  margin-left: 3px;
+  /* เว้นระยะระหว่างข้อความกับไอคอน */
+  font-size: 12px;
+  /* ขนาดของไอคอน */
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle:hover i {
+  transform: rotate(180deg);
+  /* หมุนไอคอนเมื่อชี้ที่ปุ่ม */
+  color: #fff;
+}
+
+
+/* dropdown menu จะเเสดงเมื่อกดปุ่ม*/
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 5px 0px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  opacity: 0;
+  /* เริ่มต้นที่ความโปร่งใส 0 */
+  transition: opacity 0.2s ease-in-out;
+  /* เพิ่มการเปลี่ยนแปลงความโปร่งใส */
+  top: 100%;
+  left: 1px;
+  padding: 10px;
+
+}
+
+.show-dropdown {
+  opacity: 1;
+  display: grid;
+  /* เปลี่ยนความโปร่งใสเป็น 1 เพื่อแสดงผล */
+}
+
+.dropdown-menu .text-box {
+  display: inline-block;
+
+  padding: 5px 10px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdown-menu .text-box:hover {
+  background-color: #e0e0e0; /* สีพื้นหลังเมื่อ hover */
+}
+.dropdown-menu .text-box i{
+  color: var(--color-primary);
+  margin-right: 8px;
+}
+
+
+
+.text-box a {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.text-box:hover a {
+  color: #fff;
+}
+
+
+
+
+

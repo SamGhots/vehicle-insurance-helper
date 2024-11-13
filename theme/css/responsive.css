@@ -1,0 +1,230 @@
+
+/*==================list-container============================================== */
+/*เเบ่ง list-container ให้เเสดงผล 2 columns*/
+@media (min-width: 1000px)  {
+  .list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* 2 คอลัมน์ */
+    gap: 10px;
+  }
+}
+
+
+@media (min-width:1024px) {
+  .container-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* max-width: 960px;*/
+    max-width: 1180px;
+    padding: 20px 40px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+  }
+  .stepper-wrapper-container{
+    /* max-width: 960px;*/
+  }
+  .list-box{
+    padding: 0px;
+  }
+  .selected-vehicle{
+    padding: 0px;
+  } 
+  .filler-container{
+    padding: 0px;
+  }
+  .checkbox-container label {
+    font-size: 10px !important;
+}
+.card-container.filler{
+  margin-top: 10px;
+}
+.filler-box{
+  display: none !important;
+}
+.list-company-name{
+  max-width: 100px;
+  width: 100%;
+}
+.price{
+  font-size: 14px !important;
+}
+.premium-container{
+  gap: 10px
+  ;
+}
+.filler-container{
+  
+  position: sticky;
+    top: 65px;
+}
+
+.filler-content{
+  display: block !important;
+}
+/*===============================*/
+.filter-header h2{
+  font-size: 14px  !important;
+}
+.filter-class button{
+font-size: 12px !important;
+padding: 7px !important;
+}
+.icon-title-box span{
+  font-size: 12px;
+}
+/*===========*/
+.stepper-wrapper{
+  padding: 20px 40px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar-container {
+  grid-template-columns: 0.1fr 2fr 0.2fr !important;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.text-container{
+  display: flex !important;
+  justify-content: center;
+}
+.menu-nav i{
+  display: none;
+}
+}
+
+
+/*เเบ่ง list-container ให้เเสดงผล 2 columns*/
+@media (min-width: 733px) {
+  .list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 คอลัมน์สำหรับหน้าจอเล็ก */
+    gap: 10px;
+  }
+}
+@media(max-width: 605px) {
+  .compare-slots {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+}
+/*เเบ่ง list-container ให้เเสดงผล 1 columns*/
+@media (max-width: 540px) {
+  .list-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับหน้าจอเล็ก */
+    gap: 10px;
+  }
+}
+
+@media (max-width:380px) {
+  .list-company-name{
+    width: 100%;
+    max-width: 150px;
+  }
+}
+/*ปรับ ขนาดตัวอักษรให้เล็กลง เพื่อ ให้เเสดงใน ขนาด 365px -> 320 px มีความเหมาะ*/
+@media (max-width: 365px) {
+  .list-company-name{
+    width: 100%;
+    max-width: 100px;
+  }
+/* navbar*/
+.logo-nav img {
+  width: 90px;
+}
+.contact-icon{
+  width: 25px;
+  height: 25px;
+}
+  /* progressbar */
+.step-name{
+  font-size: clamp(10px, 3vw, 12px) !important ;
+}
+ /* progressbar */
+.car-information h2{
+  font-size: clamp(12px, 3vw, 14px) !important;  
+}
+/* selected-vehicle */
+.edit-form button{
+  font-size: clamp(12px, 3vw, 14px) !important;  
+}
+.small-details p{
+  font-size: clamp(10px, 3vw, 12px) !important;  
+}
+/* selected-vehicle */
+/*filler-container */
+.filler-box h2{
+  font-size: clamp(12px, 3vw, 14px) !important; 
+}
+.fa-solid.fa-filter-list{
+  font-size: clamp(12px, 3vw, 14px) !important; 
+}
+/*list-header*/
+
+.list-header h2{
+  font-size: clamp(16px, 3vw, 18px) !important; 
+}
+.list-filler h2{
+  font-size: clamp(12px, 3vw, 18px) !important; 
+}
+/*list-container*/
+.list-company-name{
+  font-size: clamp(12px, 3vw, 14px) !important; 
+
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 15px;
+  height:15px;
+/*list-center*/
+
+}
+.list-repair-type {
+  font-size: clamp(10px, 3vw, 12px) !important; 
+}
+.list-details1{
+  font-size: clamp(12px, 3vw, 14px) !important; 
+}
+.insurance-fund-label{
+  font-size: clamp(8px, 3vw, 10px) !important; 
+}
+.insurance-fund-value{
+  font-size: clamp(10px, 3vw, 12px) !important; 
+}
+.list-details2{
+  font-size: clamp(12px, 3vw, 14px) !important; 
+}
+.deductible-label{
+  font-size: clamp(8px, 3vw, 10px) !important; 
+}
+.deductible-value{
+  font-size: clamp(10px, 3vw, 12px) !important; 
+}
+.monthly-payment{
+  font-size: clamp(8px, 3vw, 10px) !important; 
+}
+.monthly-payment span {
+  font-size: clamp(14px, 3vw, 16px) !important; 
+ 
+}
+
+.price{
+  font-size: clamp(16px, 3vw, 18px) !important; 
+}
+.buy-icon {
+  font-size: clamp(16px, 3vw, 18px) !important; 
+}
+.button-details {
+  font-size: clamp(12px, 3vw, 14px) !important; 
+}
+}
+/*==================list-container============================================== */
+
+
+
+
+

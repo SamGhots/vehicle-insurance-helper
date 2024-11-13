@@ -1,0 +1,381 @@
+.section-introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background: white;
+}
+
+
+
+
+.intro-container {
+  display: flex;
+
+  align-items: center;
+  max-width: 1166px;
+  margin: auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+
+.intro-main-title {
+  font-size: 58px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  /* เพื่อให้ ::after อ้างอิงกับตำแหน่งของ .intro-main-title */
+  padding-bottom: 5px;
+
+
+
+  opacity: 0; /* เริ่มต้นที่ไม่แสดง */
+  transform: translateY(-20px); /* เริ่มต้นที่ตำแหน่งเหนือขึ้น */
+  animation: slideDown 1s ease forwards; /* ใช้ animation slideDown */
+  animation-delay: 0.5s; /* ดีเลย์เล็กน้อย */
+}
+@keyframes slideDown {
+  to {
+    opacity: 1; /* ทำให้แสดงผลเต็มที่ */
+    transform: translateY(0); /* ตำแหน่งสุดท้าย */
+  }
+}
+.intro-main-title::after {
+
+
+  /*  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  height: 8px;
+  background-color: var(--accent-color);
+  opacity: 0.24;
+
+  border-radius: 4px;
+ */
+
+}
+
+.intro-btn-container {
+  padding-top: 40px;
+  
+}
+
+.intro-sub-title {
+  font-size: 46px;
+  padding-bottom: 12px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease forwards;
+  animation-delay: 0.7s; /* เริ่มแอนิเมชันหลังจาก intro-main-title */
+
+  
+}
+
+.intro-slogan {
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease forwards;
+  animation-delay: 1s; /* เริ่มแอนิเมชันหลังจาก intro-main-title */
+}
+
+.intro-text-box {
+  width: 100%;
+}
+
+.banner-lottie-wrapper {
+  width: 100%;
+
+  opacity: 0; /* ซ่อนภาพในตอนแรก */
+  transform: translateY(-30px); /* เลื่อนภาพขึ้นเล็กน้อย */
+  animation: slideDown 2s ease-out forwards; /* เรียกใช้งานแอนิเมชัน */
+  animation-delay: 0.5s; /* หน่วงเวลา 0.5 วินาทีก่อนเริ่ม */
+}
+
+.banner-lottie-wrapper img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+}
+
+
+.intro-text-box {
+  position: relative;
+}
+
+
+
+.icon-expand {
+  font-size: 0;
+  animation: expandToSize 1s ease forwards, blink 2s ease-in-out infinite; /* เพิ่มแอนิเมชัน blink แบบ loop */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 170px;
+  animation-delay: 0s, 1s; /* delay การกระพริบให้เริ่มหลังจากขยายเสร็จ */
+  color: var(--color-primary);
+}
+
+@keyframes expandToSize {
+  to {
+    font-size: 43px;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* แสดงผลเต็ม */
+  }
+  50% {
+    opacity: 0; /* ซ่อน */
+  }
+}
+
+
+
+
+
+
+.fade-in {
+  opacity: 0; /* เริ่มต้นด้วยการทำให้ปุ่มโปร่งใส */
+  animation: fadeIn 2s ease-in forwards; /* เรียกใช้ animation */
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* เริ่มต้นโปร่งใส */
+      transform: translateY(20px); /* เลื่อนปุ่มลงเล็กน้อย */
+  }
+  to {
+      opacity: 1; /* แสดงปุ่มเต็มที่ */
+      transform: translateY(0); /* เลื่อนปุ่มกลับขึ้นไปตำแหน่งเดิม */
+  }
+}
+@media (max-width:1200px) {
+  .intro-container {
+    max-width: 1100px;
+  }
+
+  .fa-sharp.fa-regular.fa-sparkles {
+    right: 139px !important;
+  }
+}
+
+@media (max-width:1156px) {
+  .intro-container {
+    max-width: 1050px;
+  }
+}
+
+@media (max-width:1100px) {
+  .intro-container {
+    max-width: 970px;
+  }
+
+  .fa-sharp.fa-regular.fa-sparkles {
+    right: 86px !important;
+  }
+}
+
+@media (max-width:1024px) {
+  .intro-container {
+
+    max-width: 980px;
+
+  }
+.intro-sub-title{
+  font-size: 42px;
+}
+  .fa-sharp.fa-regular.fa-sparkles {
+    right: 86px !important;
+  }
+
+  .fa-regular.fa-circle.one {
+    left: -15px !important;
+  }
+}
+
+@media (max-width:1020px) {
+  .intro-container {
+    max-width: 900px;
+  }
+
+  .fa-sharp.fa-regular.fa-sparkles {
+    right: 50px !important;
+  }
+}
+
+
+
+@media (max-width:940px) {
+  .intro-container {
+    max-width: 800px;
+  }
+
+  .fa-sharp.fa-regular.fa-sparkles {
+    right: 3px !important;
+  }
+}
+
+
+@media (max-width:840px) {
+  .section-introduce{
+    padding: 40px 30px;
+  }
+  .intro-container {
+    display: grid;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-lottie-wrapper{
+text-align: center;
+  }
+  .fa-sharp.fa-regular.fa-sparkles {
+   left: 359px;
+}
+}
+@media (max-width: 768px) {
+  .section-introduce{
+    padding: 30px 30px; /* ปรับ padding สำหรับมือถือ */
+  }
+}
+@media (max-width:591px) {
+
+  .intro-main-title {
+    font-size: 46px;
+
+  }
+
+  .intro-sub-title {
+    font-size: 23px;
+
+  }
+  
+  .intro-slogan {
+    font-size: 15px;
+  }
+  .fa-sharp.fa-regular.fa-sparkles {
+    left: 287px;
+ }
+}
+
+
+@media (max-width:431px) {
+  .intro-btn-container {
+    padding-top: 20px;
+}
+}
+
+
+
+@media (max-width: 480px) {
+  .section-introduce{
+    padding: 30px 20px; /* ปรับ padding สำหรับมือถือขนาดเล็ก */
+  }
+}
+
+@media (max-width: 360px) {
+  .fa-sharp.fa-regular.fa-sparkles {
+    font-size: 22px !important; /* ลดขนาดไอคอนให้เล็กลง */
+    left: 253px;
+  }
+  .intro-main-title {
+    font-size: 40px; /* ปรับให้ขนาดเล็กลงเพื่อความเหมาะสมกับหน้าจอ */
+  }
+  .intro-sub-title {
+    font-size: 20px; /* ขนาดตัวอักษรสำหรับหัวข้อรอง */
+  }
+  .intro-slogan {
+    font-size: 14px; /* ขนาดตัวอักษรที่เหมาะกับข้อความรอง */
+  }
+}
+
+
+
+
+
+
+
+/* ปุ่มทั่วไป */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 5px;
+  max-width: 334px;
+  width: 100%;
+  height: 50px;
+  background: var(--primary-color);
+
+  border: none;
+  border-radius: 16px;
+  transition: background-color 0.3s, transform 0.1s;
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+}
+
+
+.button:active {
+  transform: translateY(2px);
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ปุ่มถัดไป (primary) */
+.button.primary{
+  background-color: var(--color-primary);
+  color: white;
+  border-bottom: 6px solid var(--color-primary-border-bottom);
+  
+}
+.button.primary:hover {
+  background-color:var(--color-primary-hover);
+}
+.button.primary:active{
+  background-color:var(--color-primary-active);
+}
+
+/* ปุ่มถัดไป (secondary) */
+.button.secondary{
+  background-color: var(--secondary-color);
+  color: white;
+  border-bottom: 6px solid var(--secondary-color-bottom);
+  
+}
+.button.secondary:hover {
+  background-color:var(--secondary-color-hover);
+}
+.button.secondary:active{
+  background-color:var(--secondary-color-active);
+}
+/* ปุ่มถัดไป (accent) */
+.button.accent{
+  background-color: var(--accent-color);
+  color: white;
+  border-bottom: 3px solid #BF5630;
+}
+.button.accent:hover{
+  background-color: #f89977;
+}
+.button.accent:active{
+  transform: translateY(2px);
+  background-color: #c86e4e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ปุ่มยกเลิก (cancel) */
+.button.cancel {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.button.cancel:hover {
+  background-color: white; /* เปลี่ยนพื้นหลังเมื่อ hover */
+}
+

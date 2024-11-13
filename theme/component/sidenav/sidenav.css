@@ -1,0 +1,300 @@
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: width 0.5s cubic-bezier(0.18, 0.89, 0.57, 0.99);
+    /*  padding-top: 60px;*/
+
+  }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*สร้างพื้นหลังสีดํา ตอนกด เมนู navbar*/
+.overlay {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* ความเข้มของแสงที่ลดลง */
+  z-index: 1001;
+  display: none;
+  /* ซ่อน overlay โดยค่าเริ่มต้น */
+}
+
+.sidenav-open .overlay {
+  display: block;
+  /* แสดง overlay เมื่อเปิดเมนู */
+}
+
+/* ป้องกันการเลื่อนเมื่อ sidenav ถูกเปิด */
+body.sidenav-open {
+  overflow: hidden;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*sidenav-title*/
+.sidenav-title {
+  background-color:var(--color-primary);
+  display: flex;
+  align-items: center;
+  padding: 10px 16px 10px 16px;
+  /* Padding inside the box */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  flex-shrink: 0;
+  /* Prevent the box from shrinking */
+  justify-content: space-between;
+}
+
+.sidenav-logo img {
+  width: 100px;
+}
+
+
+/* Image wrapper styling */
+.image-wrapper {
+  flex-shrink: 0;
+
+  /* ป้องกันไม่ให้ภาพย่อ */
+  margin-right: 15px;
+  /* Space between image and text */
+  width: 36px;
+  /* Fixed width */
+  height: 36px;
+  /* Fixed height */
+}
+
+.image-wrapper img {
+  width: 100%;
+  /* Full width of the wrapper */
+  height: 100%;
+  /* Full height of the wrapper */
+  border-radius: 20%;
+  /* Circular image */
+  object-fit: cover;
+  /* Ensure the image covers the area */
+}
+
+/* Text styling */
+.in {
+  flex-grow: 1;
+  /* Allow text to take up remaining space */
+  min-width: 0;
+  /* Prevent overflow issues */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  overflow: hidden;
+  /* Hide overflow text */
+  text-overflow: ellipsis;
+  /* Show ellipsis for overflowing text */
+}
+
+.in strong {
+  display: block;
+  /* Ensure it takes full width */
+  font-size: 15px;
+  /* Font size */
+  color: #333;
+  /* Text color */
+}
+
+.in .text-muted {
+  color: #a9abad;
+  /* Muted text color */
+  font-size: 14px;
+  /* Font size */
+}
+
+/* Close button styling */
+.sidebar-close {
+  border: none;
+  font-size: 24px;
+  /* Adjust icon size */
+  color: #ffffff !important;
+  /* Adjust as needed */
+  cursor: pointer;
+  padding: 0;
+  /* Remove default padding */
+  margin-left: 10px;
+  /* Space between text and close button */
+  flex-shrink: 0;
+  /* Prevent the button from shrinking */
+}
+
+/* Additional styling for the close icon */
+.sidebar-close ion-icon {
+  font-size: 24px;
+  /* Adjust icon size */
+  color: #333;
+  /* Adjust as needed */
+}
+
+
+/*action-group*/
+.action-group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(67px, 1fr));
+  /* แบ่งเป็น 4 คอลัมน์ */
+  justify-items: start;
+  padding: 10px 0px;
+
+}
+
+.item-balance {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  justify-items: center
+}
+
+.item-balance a {
+  padding: 0px;
+}
+
+.item-balance strong {
+  font-size: 11px;
+  opacity: .6;
+  color: #fff;
+  margin-top: 5px;
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  font-weight: 400;
+}
+
+.icon-balance {
+  background: rgba(0, 0, 0, 0.3);
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.icon-balance i {
+  color: #FFF;
+}
+
+/*menu-nav*/
+.menu-sidenav {
+  width: 260px;
+  font-size: 13px;
+  color: #958d9e;
+  margin: 8px 0px 0px;
+  padding: 7px 16px;
+}
+
+
+.listview {
+  padding: 16px 16px 0px 16px;
+  list-style: none;
+}
+
+.listview li {
+  padding-bottom: 15px;
+}
+
+.listview a {
+  display: flex;
+  padding: 0px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+
+}
+
+.icon-box {
+
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Center icon vertically */
+  justify-content: center;
+  /* Center icon horizontally */
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+  /* ป้องกันไม่ให้ภาพย่อ */
+}
+
+.icon-box i {
+
+  font-size: 16px;
+  color: #FFF;
+}
+
+.item .in {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  color: #27173e;
+  align-items: center;
+  justify-content: space-between
+}
+
+.in .badge {
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Center icon vertically */
+  justify-content: center;
+  /* Center icon horizontally */
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.in-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.in-right i {
+  color: rgb(169, 171, 173);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Send Money*/
+.icon-box img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

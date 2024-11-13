@@ -1,0 +1,96 @@
+/* เพิ่ม Fonts Prompt*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /*สีที่ใช้ในโปรเจค*/
+  /*สีหลัก*/
+  --color-primary: #387ADF;
+  /*สีรอง*/
+  --color-secondary: #50C4ED;
+  /*สีเด่น*/
+  --color-accent: #FBA834;
+  /*สีพื้นหลัง*/
+  --color-bg: #f3f9fc;
+  /*สีอักษร*/
+  --color-text: #020A0D;
+
+  --color-white:#ffffff;
+  --color-primary-hover:#6b9ce7;
+  --color-accent-hover:#f9b453;
+
+
+  --color-primary-border-bottom: #2d61ae;
+  --color-primary-active:#638ed0;
+} 
+
+* {
+  /*สิ่งที่ต้องมี*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /*นํา Fonts มาใช้ใน โปรเจค*/
+  font-family: "Prompt", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*กําหนด สีให้กับโปรเจคของเรา*/
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary);
+  outline: 0 !important;
+  text-decoration: none;
+}
+
+
+/* สไตล์ทั่วไป (สำหรับขนาดหน้าจอใหญ่เช่นคอมพิวเตอร์) */
+.main-section {
+  padding: 15px 60px;
+  /* กำหนด padding สำหรับหน้าจอใหญ่ */
+}
+
+/* สำหรับหน้าจอแท็บเล็ต (หน้าจอขนาดกลาง) */
+@media (max-width: 1024px) {
+  .main-section {
+    padding: 20px 40px;
+    /* ปรับ padding สำหรับหน้าจอแท็บเล็ต */
+  }
+
+}
+
+/* สำหรับหน้าจอมือถือ (หน้าจอขนาดเล็ก) */
+@media (max-width: 768px) {
+  .main-section {
+    padding: 20px 30px;
+    /* ปรับ padding สำหรับหน้าจอมือถือ */
+  }
+}
+
+/* สำหรับหน้าจอมือถือขนาดเล็กมาก */
+@media (max-width: 480px) {
+  .main-section {
+    padding: 16px 20px;
+    /* ปรับ padding ให้เล็กลงสำหรับหน้าจอมือถือขนาดเล็ก */
+  }
+}
