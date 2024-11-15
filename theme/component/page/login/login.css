@@ -1,0 +1,290 @@
+.login-container{
+  background-color: var(--color-white);
+  
+}
+/*=============================*/
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-logo h1 {
+  font-size: 35px;
+  color: var(--color-primary);
+  margin-bottom: 0px !important;
+}
+
+.login-logo i {
+  font-size: 30px;
+  color: var(--color-primary);
+}
+
+.login-svg {
+  text-align: center;
+}
+
+.login-svg img {
+  width: 50%;
+}
+
+
+/* กําหนดขนาดขอบสำหรับฟอร์มล็อกอิน */
+.login-form-container {
+  max-width: 355px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #4A4A57; /* สีเทาเข้ม */
+/*  color: #7C7C8A;*/
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc ;
+  border-radius: 8px;
+
+  background: #fff;
+}
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    border: 1px solid var(--color-primary); /* สีกรอบเมื่อโฟกัส */
+    outline: none; /* เอาเส้นขอบ outline ออก */
+  
+}
+
+.login-form .btn-login {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .btn-login:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.login-form .form-links {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.login-form .form-links a {
+  color: #7C7C8A;
+  text-decoration: none;
+}
+
+.login-form .form-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ปรับสไตล์สำหรับปุ่มล็อกอินด้วย Google, LINE, Facebook */
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.social-login button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 30%;
+  border: 1px solid #e3e1e191;
+
+}
+
+/* ปรับสไตล์สำหรับปุ่มล็อกอินด้วย Google */
+.btn-google img {
+  width: 28px;
+
+}
+
+/* ปรับสไตล์สำหรับปุ่มล็อกอินด้วย LINE */
+.btn-line i {
+  color: #00c300;
+}
+
+/* ปรับสไตล์สำหรับปุ่มล็อกอินด้วย Facebook */
+.btn-facebook i {
+  color: #3b5998;
+}
+
+/* ปรับเปลี่ยนเมื่อโฮเวอร์ */
+.social-login button:hover {
+  opacity: 0.8;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  /* เงาที่เข้มขึ้นเมื่อโฮเวอร์ */
+}
+
+/* ไอคอนในปุ่ม */
+.social-login button i {
+  font-size: 28px;
+  /* ขนาดไอคอน */
+
+}
+
+.social-title {
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+
+}
+
+.social-title span {}
+
+.social-title hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+  /* ปรับสีเส้นตามต้องการ */
+  margin: 0 10px;
+  /* ระยะห่างระหว่างเส้นกับข้อความ */
+}
+
+.social-title span {
+  color: #7C7C8A;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 10px;
+  white-space: nowrap;
+  /* ป้องกันข้อความแตกบรรทัด */
+}
+
+.sign-up-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 5px;
+}
+
+.sign-up-title h1 {
+  font-size: 13px;
+  color:  #7C7C8A;
+  font-weight: 500;
+}
+
+.sign-up-title a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+
+
+
+/* ปุ่มลูกศรกลับ */
+.back-arrow {
+  position: absolute;
+
+}
+
+.back-arrow a {
+  font-size: 24px;
+  color: #000; /* สีของไอคอน */
+  text-decoration: none;
+}
+
+.back-arrow a:hover {
+  opacity: 0.7;
+}
+.back-arrow a i{
+  color: #7C7C8A;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+font-size: 14px;
+}
+
+
+/* สไตล์ทั่วไป (สำหรับขนาดหน้าจอใหญ่เช่นคอมพิวเตอร์) */
+.login-container {
+  padding: 15px 20px;
+  /* กำหนด padding สำหรับหน้าจอใหญ่ */
+}
+
+/* สำหรับหน้าจอแท็บเล็ต (หน้าจอขนาดกลาง) */
+@media (max-width: 1024px) {
+  .login-container {
+    padding: 20px 40px;
+    /* ปรับ padding สำหรับหน้าจอแท็บเล็ต */
+  }
+
+}
+
+
+@media (min-width: 800px) {
+  
+  .login-container{
+    width: 100%;
+    max-width: 440px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); /* เพิ่มเงาให้ฟอร์มดูชัดเจนขึ้น */
+  }
+  .login-svg img {
+    width: 40%;
+}
+.social-title {
+  margin-top: 30px;
+}
+.sign-up-title {
+margin-top: 20px;
+}
+.login-form .form-links {
+
+margin-bottom: 15px;
+}
+
+}
+/* สำหรับหน้าจอมือถือ (หน้าจอขนาดเล็ก) */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px 30px;
+    /* ปรับ padding สำหรับหน้าจอมือถือ */
+  }
+}
+
+/* สำหรับหน้าจอมือถือขนาดเล็กมาก */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 16px 20px;
+    /* ปรับ padding ให้เล็กลงสำหรับหน้าจอมือถือขนาดเล็ก */
+  }
+}

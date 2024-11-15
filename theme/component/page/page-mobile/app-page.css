@@ -1,0 +1,203 @@
+.app-page{
+
+}
+.page-header {
+  display: flex;
+  align-items: center; /* จัดให้อักษรและไอคอนอยู่กึ่งกลางแนวตั้ง */
+  justify-content: center; /* จัดให้อักษรอยู่กึ่งกลางแนวนอน */
+  position: relative; /* เพื่อให้สามารถวางไอคอนที่ซ้ายสุดได้ */
+  height: 56px; /* กำหนดความสูงตามต้องการ */
+background-color: #fff;
+color: #222;
+border-bottom: 1px solid #DCDCE9;
+position: sticky;
+top: 0;
+width: 100%;
+z-index: 999;
+}
+
+.page-icon {
+  position: absolute;
+  left: 10px; /* จัดให้ไอคอนอยู่ทางซ้าย */
+}
+.page-icon i{
+
+  color: #7C7C8A;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.page-title {
+  font-size: 20px; /* ขนาดตัวอักษร */
+  font-weight: 500;
+
+}
+.listview-title{
+  font-size: 13px;
+  color: #958d9e;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+/*======================*/
+.listview-container{
+  padding-top: 5px;
+}
+.listview{
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+.listview li{
+  list-style-type: none;
+}
+.item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  position: relative;
+}
+
+.listview > li:not(:last-child) .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 64px; /* ขึ้นอยู่กับดีไซน์ของคุณ */
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #DCDCE9;
+  box-sizing: border-box; 
+}
+
+
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+  color: #fff;
+}
+.icon-box.white{
+  background-color: #fff;
+
+  border: 2px solid #ddd; /* เพิ่มเส้นกรอบสีเทาอ่อน */
+  border-radius: 50%; /* เพื่อให้กรอบมีความกลม */
+
+}
+.icon-box i {
+  font-size: 16px;
+
+}
+.item .in {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  color: #27173e;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.in-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.in-right i{
+  color: #A9ABAD;
+  font-size: 15px;
+}
+
+
+
+
+
+
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.loading-icon {
+  width: 100px; /* Adjust size of loader icon */
+}
+
+
+/* Optional: Add fade-out effect */
+.fade-out {
+  animation: fadeOut 1s cubic-bezier(0.28, 0.68, 0.32, 1.28) forwards;
+  pointer-events: none; 
+  
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ห*/
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-icon {
+  width: 50px; /* Adjust size of loader icon */
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.icon-insurance-level-1 {
+  color: #FFD700; 
+}
+
+.icon-insurance-level-2 {
+  color: #cb52ff;
+}
+
+.icon-insurance-level-3 {
+  color: #62ebff;
+}
+
+.icon-insurance-level-4 {
+  color: #716d6d;
+}
+*/
+
+

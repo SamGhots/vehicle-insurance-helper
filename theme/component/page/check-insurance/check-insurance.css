@@ -1,0 +1,344 @@
+.compare-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 18px auto;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.compare-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.compare-title.space {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.compare-title i{
+  padding-right: 5px;
+}
+.compare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #ccc;
+  /* กำหนดความหนาและสีของเส้นใต้ */
+  padding: 10px 10px;
+
+
+}
+
+.compare-subhead {
+
+  flex: 1;
+  text-align: left;
+  color: #222;
+  font-size: 14px;
+}
+
+.compare-content {
+  flex: 1;
+  text-align: right;
+
+
+  color: #222;
+  font-size: 14px;
+}
+
+
+
+.compare-plans-bg {
+  position: sticky;
+  top: 59px;
+}
+
+.compare-plans-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 14px auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 0;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.compare-plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.compare-plans-title {
+  color: #222;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.compare-plans-title-company p{
+  font-size: 12px !important;
+  text-align: start;
+  color: #222;
+  white-space: nowrap; /* ป้องกันไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+  overflow: hidden; /* ซ่อนข้อความส่วนที่เกิน */
+  text-overflow: ellipsis; /* เพิ่ม ... เมื่อข้อความยาวเกิน */
+}
+
+
+
+
+
+.compare-plans-content {
+  display: flex;
+  gap: 10px;
+  color: #222;
+}
+
+.compare-plans-img {
+  display: flex;
+}
+
+.compare-plans-img img {
+  width: 40px;
+}
+
+
+
+.compare-row.bg {
+  background-color: #efefef;
+}
+
+
+
+.compare-plans-class {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.compare-plans-price {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.compare-plans-price span {
+  font-size: 10px;
+  font-weight: 300;
+
+}
+
+.compare-plans-button button {
+
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  /* เพิ่ม transition สำหรับหลายคุณสมบัติ */
+}
+
+.compare-plans-button button:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* เพิ่มเงาที่ปุ่ม */
+  transform: translateY(-2px);
+  /* ทำให้ปุ่มยกขึ้น */
+}
+
+.compare-plans-box {
+  position: relative;
+  display: grid;
+  gap: 5px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 8px;
+
+}
+
+.close-button-compare {
+  position: absolute;
+  top: -2px;
+  right: 2px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: rgb(152, 150, 150);
+}
+
+.close-button-compare:hover {
+  color: rgb(198, 198, 198);
+}
+
+
+
+.compare-plans-title.mobile{
+  display: none;
+}
+
+.compare-plans-box-container{
+  display: flex;
+  gap: 30px;
+}
+@media (max-width:905px) {
+  .compare-plans-title{
+    display: none;
+      }
+      .compare-plans-title.mobile{
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .compare-plans {
+        justify-content: end;
+        
+      }
+      .compare-plans-box-container {
+        display: flex;
+        gap: 10px;
+    }
+}
+/* Media Query สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 768px) {
+  .compare-subhead {
+    font-size: clamp(10px, 2vw, 14px);
+  }
+
+  .compare-content {
+    font-size: clamp(10px, 2vw, 14px);
+  }
+
+  .compare-plans-title {
+    font-size: clamp(15px, 3vw, 20px);
+  }
+.compare-title{
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+
+
+
+  
+  .compare-plans-text .compare-plans-class {
+    font-size: clamp(10px, 2vw, 16px);
+  }
+
+  .compare-plans-text .compare-plans-price {
+    font-size: clamp(10px, 2vw, 18px);
+  }
+
+  .compare-plans-img img {
+    width: 30px;
+    height: 30px;
+}
+.compare-plans-price span {
+  
+  font-size: clamp(8px, 2vw, 10px);
+}
+
+}
+@media (max-width:730px) {
+  .compare-plans-box-container{
+    max-width: 503px;
+    overflow-x: auto;
+  }
+  .compare-plans-content{
+    width: 111px;
+  }
+  .compare-plans-box{
+    
+  }
+  
+  
+}
+
+@media (max-width:654px) {
+  .compare-plans-box-container{
+    max-width: 459px;
+    overflow-x: auto;
+  }
+  .compare-plans-content{
+    width: 111px;
+  }
+  .compare-plans-box{
+    
+  }
+  
+  
+}
+@media (max-width:587px) {
+  .compare-plans-box-container{
+    max-width: 456px;
+    overflow-x: auto;
+  }
+  .compare-plans-content{
+    width: 111px;
+  }
+  .compare-plans-box{
+    
+  }
+  
+  
+}
+@media (max-width:520px) {
+  .compare-plans-box-container{
+    max-width: 374px;
+    overflow-x: auto;
+  }
+  .compare-plans-content{
+    width: 111px;
+  }
+  .compare-plans-box{
+    
+  }
+  .compare-plans-box-container {
+    display: flex;
+    gap: 10px;
+}
+  
+}
+
+@media(max-width:450px){
+  .compare-plans-container{
+    padding: 20px 10px;
+  }
+  .compare-container{
+    padding: 20px 10px;
+  }
+
+.close-button-compare i{
+  font-size: 10px;
+}
+.close-button-compare {
+   
+  top: -7px;
+  right: 2px;
+
+}
+}
+
+
+@media(max-width:350px){
+  .compare-plans-img img {
+    width: 25px;
+    height: 25px;
+}
+}
+@media(max-width:330px){
+  .compare-plans-img img {
+    width: 22px;
+    height: 22px;
+}
+}

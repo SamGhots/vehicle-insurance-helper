@@ -1,0 +1,193 @@
+
+/*===========================*/
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+
+
+@keyframes highway {
+  100% {
+    transform: translateX(-3700px);
+  }
+}
+
+.city {
+
+  height: 250px;
+  width: 500%;
+  background-image: url(../../img/city.png);
+  position: absolute;
+  top: 110px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+.car {
+  width: 400px;
+  left: 50%;
+  bottom: -111px;
+  transform: translateX(-50%);
+  position: relative;
+  z-index: 2;
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+
+  50% {
+    transform: translateY(1px);
+  }
+
+  0% {
+    transform: translateY(-1px);
+  }
+}
+.wheel{
+  left: 50%;
+  bottom: 105px;
+  transform: translateY(-50%);
+  position: relative;
+  z-index: 2;
+}
+.wheel img{
+  width: 66px;
+  height: 66px;
+  animation: wheel 1s linear infinite;
+}
+.back-wheel{
+  left: -126px;
+  position: absolute;
+}
+.front-wheel{
+  left: 64px;
+  position: absolute;
+}
+@keyframes wheel{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.into-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.into-logo i {
+  font-size: 30px;
+  color: var(--color-primary);
+}
+
+.into-logo h1 {
+  font-size: 35px;
+  color:var(--color-primary);
+  margin-bottom: 0px;
+}
+
+/*=======================================*/
+.button-box{
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  position: relative; /* หรือ absolute ขึ้นอยู่กับการจัดตำแหน่ง */
+  z-index: 4; /* ค่ามากขึ้นจะอยู่ด้านบนกว่า */
+}
+
+.login {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color:var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.button-box button, .guest-access {
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* ทำให้เอฟเฟกต์เรียบ */
+}
+
+/* ปุ่มยกขึ้นเมื่อชี้เมาส์ */
+.button-box button:hover, .guest-access:hover {
+  transform: translateY(-5px); /* ยกขึ้น 5px */
+  
+}
+.register{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  color: var(--color-primary);;
+  border: 1px solid var(--color-primary);;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guest-access {
+  padding: 10px 20px;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-primary);;
+}
+.guest-access:hover{
+  color: var(--color-primary-hover);;
+}
+
+
+@media (max-width: 480px) {
+.car{
+  width: 370px;
+}
+.wheel {
+  bottom: 89px;
+}
+.wheel img {
+  width: 59px;
+  height: 59px;
+}
+.back-wheel {
+  left: -115px;
+}
+.front-wheel {
+  left: 59px;
+
+}
+}

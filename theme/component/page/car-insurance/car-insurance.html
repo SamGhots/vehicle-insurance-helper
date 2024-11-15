@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== ICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d">
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+  <!--=============== ICONS ===============-->
+  <!--=============== ICONS ===============-->
+  <link rel="stylesheet" href="car-insurance.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <link rel="stylesheet" href="theme/css/responsive.css">
+  <link rel="stylesheet" href="theme/component/navbar/navbar.css">
+  <link rel="stylesheet" href="theme/component/sidenav/sidenav.css">
+  <link rel="stylesheet" href="https://taxidee.com/san/car-insurance/theme/component/footer/footer.css">
+
+
+  <!-- Link to Select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+  <title>Drive Safe</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <?php include('../../component/navbar/navbar.php'); ?>
+
+  <!-- sidenav -->
+
+  <?php include('../../component/sidenav/sidenav.php'); ?>
+
+
+  <!-- checkinsurance -->
+  <div class="checkinsurance-container main-section">
+    <div class="checkinsurance-left">
+      <div class="checkinsurance-left__title">
+        <h1>กรอกข้อมูลรถของคุณ</h1>
+      </div>
+      <div class="checkinsurance-box">
+        <div class="checkinsurance-item" id="brand-item" onclick="openPopup('brand')" style="background-color: white;">
+          <img src="https://taxidee.com/san/car-insurance/theme/img/Star.svg" alt="star"> ยี่ห้อรถ
+        </div>
+        <div class="checkinsurance-item" id="model-item" onclick="openPopup('model')" style="background-color: #EBEBEB; pointer-events: none;"><img src="https://taxidee.com/san/car-insurance/theme/img/car-solid 1.svg" alt=""> รุ่นรถ</div>
+        <div class="checkinsurance-item" id="year-item" onclick="openPopup('year')" style="background-color: #EBEBEB; pointer-events: none;"><img src="https://taxidee.com/san/car-insurance/theme/img/calendar-check-regular.svg" alt=""> ปีที่ผลิต</div>
+
+        <div class="checkinsurance-item" id="submodel-item" onclick="openPopup('submodel')" style="background-color: #EBEBEB; pointer-events: none;"><img src="https://taxidee.com/san/car-insurance/theme/img/small.svg" alt=""> รุ่นย่อย</div>
+      </div>
+      <div class="checkinsurance-button">
+        <button class="button primary" style="font-size:18px; width:260px; height:50px;" onclick="window.location.href='/san/car-insurance/theme/page/choose-insurance/choose-insurance.php'">บันทีก</button>
+
+      </div>
+
+      <!-- Popup Form Template -->
+      <!-- Popup Form  สำหรับเลือกยี่ห้อรถ-->
+      <div id="popup-form" class="popup-overlay" style="display:none;">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup('brand')"><i class="fa-solid fa-circle-xmark"></i></span>
+          <h3>เลือกยี่ห้อรถ</h3>
+          <div class="brand-grid">
+            <!-- โลโก้ยี่ห้อรถแบบ 3x3 -->
+            <div class="brand-logo" onclick="selectBrand('Toyota')"><img src="../../img/car-brand/toyota1.jpg" alt="Toyota"></div>
+            <div class="brand-logo" onclick="selectBrand('Honda')"><img src="../../img/car-brand/honda1.jpg" alt="Honda"></div>
+            <div class="brand-logo" onclick="selectBrand('Nissan')"><img src="../../img/car-brand/nissan1.jpg" alt="Nissan"></div>
+            <div class="brand-logo" onclick="selectBrand('Ford')"><img src="../../img/car-brand/ford1.jpg" alt="Ford"></div>
+            <div class="brand-logo" onclick="selectBrand('Mazda')"><img src="../../img/car-brand/mazda1.jpg" alt="Mazda"></div>
+            <div class="brand-logo" onclick="selectBrand('BMW')"><img src="../../img/car-brand/bmw1.png" alt="BMW"></div>
+            <div class="brand-logo" onclick="selectBrand('Mercedes')"><img src="../../img/car-brand/mercedes1.png" alt="Mercedes"></div>
+            <div class="brand-logo" onclick="selectBrand('Audi')"><img src="../../img/car-brand/audi.png" alt="Audi"></div>
+            <div class="brand-logo other">
+              <div onclick="selectBrand('Other')" class="brand-logo-other"><i class="fa-solid fa-square-plus"></i></div>
+            </div>
+          </div>
+          <form id="brand-input-form">
+            <select id="input-field" required>
+              <option value="">กรุณาเลือกยี่ห้อรถ</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Honda">Honda</option>
+              <option value="Nissan">Nissan</option>
+              <option value="BMW">BMW</option>
+              <option value="Mercedes">Mercedes</option>
+              <!-- เพิ่มรายการยี่ห้อรถที่ต้องการ -->
+            </select>
+            <button type="submit">ยืนยัน</button>
+          </form>
+
+        </div>
+      </div>
+
+      <!-- Popup Form สำหรับเลือกรุ่นรถ -->
+      <div id="popup-form-model" class="popup-overlay" style="display:none;">
+        <div class="popup-content small">
+          <span class="close-btn" onclick="closePopupModel()"><i class="fa-solid fa-circle-xmark"></i></span>
+          <h3>เลือกรุ่นรถ</h3>
+          <form id="model-input-form">
+            <select id="model-select-field" required>
+              <option value="">กรุณาเลือกรุ่นรถ</option>
+              <option value="Corolla">Corolla</option>
+              <option value="Civic">Civic</option>
+              <option value="Accord">Accord</option>
+              <option value="Camry">Camry</option>
+              <option value="Mazda3">Mazda3</option>
+              <option value="Altis">Altis</option>
+              <!-- เพิ่มรายการรุ่นรถเพิ่มเติมตามต้องการ -->
+            </select>
+            <button type="submit">ยืนยัน</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Popup Form สำหรับเลือกปีที่ผลิต -->
+      <div id="popup-form-year" class="popup-overlay" style="display:none;">
+        <div class="popup-content small">
+          <span class="close-btn" onclick="closePopupYear()"><i class="fa-solid fa-circle-xmark"></i></span>
+          <h3>เลือกปีที่ผลิต</h3>
+          <form id="year-input-form">
+            <select id="year-select-field" required>
+              <option value="">กรุณาเลือกปีที่ผลิต</option>
+              <!-- เพิ่มปีที่ต้องการ -->
+              <option value="2020">2020 (2563)</option> <!-- เพิ่มปี พ.ศ. -->
+              <option value="2021">2021 (2564)</option> <!-- เพิ่มปี พ.ศ. -->
+              <option value="2022">2022 (2565)</option> <!-- เพิ่มปี พ.ศ. -->
+              <option value="2023">2023 (2566)</option> <!-- เพิ่มปี พ.ศ. -->
+            </select>
+            <button type="submit">ยืนยัน</button>
+          </form>
+        </div>
+      </div>
+
+
+
+      <div id="popup-form-submodel" class="popup-overlay" style="display:none;">
+        <div class="popup-content small">
+          <span class="close-btn" onclick="closePopupSubmodel()"><i class="fa-solid fa-circle-xmark"></i></span>
+          <h3>เลือกรุ่นย่อย</h3>
+          <form id="submodel-input-form">
+            <select id="submodel-select-field" required>
+              <option value="">กรุณาเลือกรุ่นย่อย</option>
+              <!-- เพิ่มรุ่นย่อยที่ต้องการ -->
+              <option value="Submodel 1">Submodel 1</option>
+              <option value="Submodel 2">Submodel 2</option>
+              <option value="Submodel 3">Submodel 3</option>
+              <option value="Submodel 4">Submodel 4</option>
+            </select>
+            <button type="submit">ยืนยัน</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="checkinsurance-right">
+      <img src="../../img/sports car.svg" alt="">
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- sidenav -->
+  <script src="https://taxidee.com/san/car-insurance/theme/component/sidenav/sidenav.js"></script>
+  <script src="https://taxidee.com/san/car-insurance/theme/component/navbar/dropdown.js"></script>
+
+
+  <!-- Link to Select2 JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // กำหนดแผนที่ของแบรนด์และรูปภาพ
+      const brandLogoMap = {
+        'Toyota': '../../img/car-brand/toyota1.jpg',
+        'Honda': '../../img/car-brand/honda1.jpg',
+        'Nissan': '../../img/car-brand/nissan1.jpg',
+        'Ford': '../../img/car-brand/ford1.jpg',
+        'Mazda': '../../img/car-brand/mazda1.jpg',
+        'BMW': '../../img/car-brand/bmw1.png',
+        'Mercedes': '../../img/car-brand/mercedes1.png',
+        'Audi': '../../img/car-brand/audi.png',
+      };
+
+      // เริ่มต้น select2
+      $('#input-field').select2({
+        placeholder: "กรุณาเลือกยี่ห้อรถ", // ข้อความ placeholder
+        allowClear: true
+      });
+
+      // เมื่อเลือกยี่ห้อรถ
+      $('#input-field').on('change', function() {
+        const selectedBrand = $(this).val(); // รับค่าที่เลือก
+        const brandName = selectedBrand ? selectedBrand : "กรุณาเลือกยี่ห้อรถ";
+        const brandImage = brandLogoMap[selectedBrand] || "";
+
+        // อัปเดตชื่อและรูปภาพของแบรนด์ที่เลือก
+        if (selectedBrand) {
+          $('#brand-name').text(selectedBrand); // แสดงชื่อแบรนด์
+          $('#brand-image').attr('src', brandImage).show(); // แสดงรูปภาพ
+        } else {
+          $('#brand-name').text("กรุณาเลือกยี่ห้อรถ"); // ข้อความเริ่มต้น
+          $('#brand-image').hide(); // ซ่อนรูปภาพถ้ายังไม่เลือก
+        }
+      });
+
+      // ฟังก์ชันเมื่อยืนยันการเลือก
+      $('#brand-input-form').submit(function(event) {
+        event.preventDefault();
+        // ปิดฟอร์มกรอกยี่ห้อและไปที่ขั้นตอนถัดไป
+        // สามารถเพิ่มโค้ดเปิดป๊อปอัพหรืออัปเดต UI อื่น ๆ ที่นี่
+      });
+    });
+  </script>
+
+
+  <script>
+    let currentStep = 0; // กำหนดค่าเริ่มต้นของ currentStep
+    const formItems = {
+      brand: document.getElementById("brand-item"),
+      model: document.getElementById("model-item"),
+      year: document.getElementById("year-item"),
+      submodel: document.getElementById("submodel-item")
+    };
+    const submitButton = document.querySelector('.checkinsurance-button button');
+
+    // ฟังก์ชันเปิด Popup สำหรับประเภทที่กำหนด
+    function openPopup(type) {
+      if (type === 'brand') {
+        document.getElementById('popup-form').style.display = 'flex';
+      } else if (type === 'model') {
+        document.getElementById('popup-form-model').style.display = 'flex';
+      } else if (type === 'year') {
+        document.getElementById('popup-form-year').style.display = 'flex';
+      } else if (type === 'submodel') {
+        document.getElementById('popup-form-submodel').style.display = 'flex';
+      }
+    }
+
+    // ฟังก์ชันปิด Popup
+    function closePopup(type) {
+      if (type === 'brand') {
+        document.getElementById('popup-form').style.display = 'none';
+      } else if (type === 'model') {
+        document.getElementById('popup-form-model').style.display = 'none';
+      } else if (type === 'year') {
+        document.getElementById('popup-form-year').style.display = 'none';
+      }
+    }
+
+    // ฟังก์ชันเลือกยี่ห้อรถ
+    function selectBrand(brand) {
+      const brandItem = document.getElementById('brand-item');
+      const brandLogoMap = {
+        'Toyota': '../../img/car-brand/toyota1.jpg',
+        'Honda': '../../img/car-brand/honda1.jpg',
+        'Nissan': '../../img/car-brand/nissan1.jpg',
+        'Ford': '../../img/car-brand/ford1.jpg',
+        'Mazda': '../../img/car-brand/mazda1.jpg',
+        'BMW': '../../img/car-brand/bmw1.png',
+        'Mercedes': '../../img/car-brand/mercedes1.png',
+        'Audi': '../../img/car-brand/audi.png',
+      };
+
+      if (brand === 'Other') {
+        openTextInput(); // ถ้ายี่ห้อเป็น "Other" ให้เปิดฟอร์มกรอก
+      } else {
+        closePopup('brand'); // ปิด Popup ยี่ห้อ
+        if (brandLogoMap[brand]) {
+          brandItem.innerHTML = `<img src="${brandLogoMap[brand]}" alt="${brand}"> ${brand}`;
+          brandItem.classList.add("selected");
+        } else {
+          brandItem.innerHTML = `${brand}`;
+          brandItem.classList.remove("selected");
+        }
+
+        // เปลี่ยนสีพื้นหลังและเปิดใช้งาน `model-item`
+        formItems.model.style.backgroundColor = "white";
+        formItems.model.style.pointerEvents = "auto";
+        currentStep++;
+
+
+      }
+    }
+
+    // ฟังก์ชันเปิดกรอกข้อมูลยี่ห้ออื่นๆ
+    function openTextInput() {
+      document.getElementById('brand-input-form').style.display = 'flex'; // แสดงช่องกรอกข้อมูล
+    }
+
+
+
+    // ฟังก์ชันการส่งข้อมูลฟอร์มกรอกยี่ห้ออื่นๆ
+    document.getElementById('brand-input-form').onsubmit = function(event) {
+      event.preventDefault();
+      const selectedBrand = document.getElementById('input-field').value; // อ่านค่าเลือกจาก select
+
+      if (selectedBrand) {
+        // เรียกใช้งานฟังก์ชัน selectBrand() เพื่อแสดงผลลัพธ์
+        selectBrand(selectedBrand);
+
+        // ปิด Popup ยี่ห้อ
+        closePopup('brand');
+
+        // เปิดใช้งาน `model-item` หลังจากเลือกยี่ห้อ
+        formItems.model.style.backgroundColor = "white";
+        formItems.model.style.pointerEvents = "auto";
+        currentStep++;
+      }
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ฟังก์ชันเลือกปีที่ผลิต
+    function openPopupYear() {
+      document.getElementById('popup-form-year').style.display = 'flex';
+    }
+
+    // ฟังก์ชันปิด Popup ปีที่ผลิต
+    function closePopupYear() {
+      document.getElementById('popup-form-year').style.display = 'none';
+    }
+
+    // เมื่อยืนยันปีที่ผลิต
+    document.getElementById('year-input-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const selectedYear = document.getElementById('year-select-field').value;
+
+      if (selectedYear) {
+        closePopupYear();
+        const yearItem = document.getElementById("year-item");
+
+        yearItem.innerHTML = `<img src="../../img/calendar-check-regular.svg" alt=""> ${selectedYear}`;
+        yearItem.classList.add("selected");
+
+        currentStep++;
+        // เปิดใช้งาน `submodel-item` หลังจากเลือกปีที่ผลิต
+        if (currentStep >= 3) {
+          formItems.submodel.style.backgroundColor = "white";
+          formItems.submodel.style.pointerEvents = "auto";
+        }
+        // เช็คให้เปิดใช้งานปุ่มบันทึก
+        if (currentStep === 3) {
+          submitButton.disabled = false;
+        }
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ฟังก์ชันเมื่อยืนยันรุ่นรถ
+    document.getElementById('model-input-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const selectedModel = document.getElementById('model-select-field').value; // ค่า รุ่นที่เลือกจาก select
+
+      if (selectedModel) {
+        closePopup('model'); // ปิด Popup รุ่นรถ
+        const modelItem = document.getElementById("model-item");
+
+        modelItem.innerHTML = `<img src="../../img/car-solid 1.svg" alt=""> ${selectedModel}`;
+        modelItem.classList.add("selected");
+
+        currentStep++;
+
+        // เปิดใช้งาน `year-item` หลังจากเลือกรุ่น
+        if (currentStep >= 2) {
+          formItems.year.style.backgroundColor = "white";
+          formItems.year.style.pointerEvents = "auto";
+        }
+      }
+    });
+
+    // ฟังก์ชันปิด Popup รุ่นรถ
+    function closePopupModel() {
+      document.getElementById('popup-form-model').style.display = 'none';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ฟังก์ชันเปิด Popup สำหรับรุ่นย่อย
+    function openPopupSubmodel() {
+      document.getElementById('popup-form-submodel').style.display = 'flex';
+    }
+
+    // ฟังก์ชันปิด Popup รุ่นย่อย
+    function closePopupSubmodel() {
+      document.getElementById('popup-form-submodel').style.display = 'none';
+    }
+
+    // ฟังก์ชันเมื่อยืนยันรุ่นย่อย
+    document.getElementById('submodel-input-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const selectedSubmodel = document.getElementById('submodel-select-field').value;
+
+      if (selectedSubmodel) {
+        closePopupSubmodel(); // ปิด Popup รุ่นย่อย
+        const submodelItem = document.getElementById("submodel-item");
+
+        submodelItem.innerHTML = `<img src="../../img/small.svg" alt=""> ${selectedSubmodel}`;
+        submodelItem.classList.add("selected");
+
+        currentStep++;
+
+        // เปิดใช้งานปุ่มบันทึกเมื่อกรอกครบทั้งหมด
+        if (currentStep === 4) {
+          submitButton.disabled = false;
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
