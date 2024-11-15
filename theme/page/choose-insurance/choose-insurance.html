@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== ICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!--=============== ICONS ===============-->
+    <!--=============== CSS ===============-->
+    <!-- ไฟล์ CSS ของ Theme -->
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <!-- ไฟล์ CSS ของ Components -->
+    <link rel="stylesheet" href="../../component/navbar/navbar.css" />
+    <link rel="stylesheet" href="../../component/sidenav/sidenav.css" />
+    <link rel="stylesheet" href="../../component/progressbar/progressbar.css" />
+    <link rel="stylesheet" href="../../component/popup/popup.css" />
+    <link
+      rel="stylesheet"
+      href="../../component/vehicleInfoCard/selected-vehicle.css"
+    />
+    <link rel="stylesheet" href="../../component/fillerCard/filler.css" />
+    <link rel="stylesheet" href="../../component/fillerPopup/fillerPopup.css" />
+    <link rel="stylesheet" href="../../component/list-card/list.css" />
+    <link
+      rel="stylesheet"
+      href="../../component/list-card/comparison-list.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../component/list-card-popup/list-card-popup.css"
+    />
+
+    <title>Drive Safe</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-section navbar">
+      <div class="navbar-container">
+        <!--box1📦 icon+logo -->
+        <div class="menu-nav">
+          <i class="fa-solid fa-bars" onclick="openNav()"></i>
+          <div class="logo-nav">
+            <a href="/vehicle-insurance-helper/">
+              <img src="../../img/logo3.png" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <!--box2📦  contact-box-->
+        <div class="text-container">
+          <div class="dropdown">
+            <button class="dropdown-toggle">
+              ประกันภัยรถยนต์ <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div class="text-box">
+                <i class="fa-solid fa-shield"></i>ประกันภัยรถยนต์ชั้น 1
+              </div>
+              <div class="text-box">
+                <i class="fa-solid fa-shield"></i>ประกันภัยรถยนต์ชั้น 2+
+              </div>
+              <div class="text-box">
+                <i class="fa-solid fa-shield"></i>ประกันภัยรถยนต์ชั้น 3+
+              </div>
+              <div class="text-box">
+                <i class="fa-solid fa-shield"></i>ประกันภัยรถยนต์ชั้น 3
+              </div>
+            </div>
+          </div>
+
+          <div class="text-box">
+            <a href=""> โปรโมชั่น & กิจกรรม </a>
+          </div>
+          <div class="text-box">
+            <a href=""> ติดต่อเรา </a>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-toggle">
+              เกี่ยวกับเรา <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div class="text-box">
+                <i class="fa-solid fa-user"></i>เกี่ยวกับเรา
+              </div>
+              <div class="text-box">
+                <i class="fa-solid fa-briefcase"></i>สมัครงงาน
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--box3📦  contact-box-->
+        <div class="contact-box">
+          <div class="contact-icon">
+            <i class="fa-brands fa-line"></i>
+          </div>
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-icon">
+            <img src="../../img/avatar2.jpg" alt="" />
+            <!-- <i class="fa-solid fa-user"></i> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- sidenav-->
+    <div id="sidenav" class="sidenav">
+      <div class="sidenav-title">
+        <div class="sidenav-logo">
+          <img
+            src="https://taxidee.com/san/car-insurance/theme/img/logo3.png"
+            alt=""
+          />
+        </div>
+        <div class="sidenav-icon">
+          <a href="#" class="sidebar-close" onclick="closeNav()">&times;</a>
+        </div>
+      </div>
+      <!--เข้าสู่ระบบ -->
+      <div class="menu-sidenav">เข้าสู่ระบบ</div>
+      <ul class="listview">
+        <li>
+          <a href="../../page/login/login.php" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="in">
+              เข้าสู่ระบบ
+              <div class="in-right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- ประกันภัย -->
+      <div class="menu-sidenav">ประกันภัย</div>
+      <!-- listview" -->
+      <ul class="listview">
+        <li>
+          <a
+            href="/car-insurance/theme/page/page-mobile/app-car-insurance.php"
+            class="item"
+          >
+            <div class="icon-box">
+              <i class="fa-solid fa-steering-wheel"></i>
+            </div>
+            <div class="in">
+              ประกันภัยรถยนต์
+              <div class="in-right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/car-insurance/theme/page/page-mobile/app-other-insurance.php"
+            class="item"
+          >
+            <div class="icon-box">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <div class="in">
+              ประกันภัยอื่นๆ
+
+              <div class="in-right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- menu -->
+      <div class="menu-sidenav">บริการทางการเงิน</div>
+      <!-- listview -->
+      <ul class="listview">
+        <li>
+          <a href="app-pages.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-credit-card-front"></i>
+            </div>
+            <div class="in">
+              บัตรเครดิต
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="app-components.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <div class="in">
+              สินเชื่อ
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!-- ประกันภัย -->
+      <div class="menu-sidenav">ข้อมูลทั่วไป</div>
+      <ul class="listview">
+        <li>
+          <a href="index.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-book"></i>
+            </div>
+            <div class="in">
+              สาระน่ารู้
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="app-pages.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-messages-question"></i>
+            </div>
+            <div class="in">
+              แจ้งปัญหา
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="app-pages.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="in">
+              ค้นหาอู่ซ่อม
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- ประกันภัย -->
+      <div class="menu-sidenav">องค์กร</div>
+      <ul class="listview">
+        <li>
+          <a href="index.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <div class="in">
+              นักลงทุนสัมพันธ์
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="app-pages.html" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="in">
+              ติดต่อเรา
+              <div class="in-right"></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="theme/component/page/app-about-us.php" class="item">
+            <div class="icon-box">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="in">
+              เกี่ยวกับเรา
+              <div class="in-right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="overlay" onclick="closeNav()"></div>
+
+    <!-- progressbar -->
+    <div class="stepper-wrapper main-section">
+      <div class="stepper-wrapper-container">
+        <div class="stepper-item completed">
+          <div class="step-counter">1</div>
+          <div class="step-name">เลือกเเผน</div>
+        </div>
+        <div class="stepper-item">
+          <div class="step-counter">2</div>
+          <div class="step-name">กรอกข้อมูล</div>
+        </div>
+        <div class="stepper-item">
+          <div class="step-counter">3</div>
+          <div class="step-name">ชําระเงิน</div>
+        </div>
+        <div class="stepper-item">
+          <div class="step-counter">4</div>
+          <div class="step-name">ทํารายการสําเร็จ</div>
+        </div>
+      </div>
+    </div>
+    <!--popup -->
+    <div id="popup-call" class="popup-call">
+      <div class="popup-content">
+          <span class="close-button" onclick="closePopup()">&times;</span>
+          <p>ขอบคุณค่ะ เจ้าหน้าที่ติดต่อกลับหาท่านภายใน 30 นาที</p>
+      </div>
+  </div>
+  
+    <div class="container-content">
+      <div class="left-container">
+        <!-- selected-vehicle -->
+        <section class="selected-vehicle main-section">
+          <div class="card-container">
+            <div class="title-contaienr">
+              <div class="vehicle-Info">
+                <div class="icon-box">
+                  <i class="fa-sharp-duotone fa-solid fa-cars"></i>
+                </div>
+                <div class="car-information">
+                  <h2>ข้อมูลรถของคุณ</h2>
+                </div>
+              </div>
+              <div class="edit-form">
+                <button onclick="switchForm()"><i class="fa-solid fa-pen-to-square"></i>แก้ไขข้อมูล</button>
+              </div>
+            </div>
+            <div class="small-details">
+              <p>ISUZU / D-MAX / 2022 / Auto 2 ประตู / 1.9 / S</p>
+            </div>
+        
+            <!-- ==== form  ======= -->
+            <div class="wrapper" id="editForm">
+              <div class="form">
+                <div class="input_field">
+                  <label for="">ยี่ห้อ</label>
+                  <div class="custom_select">
+                    <select class="type" name="" id="" disabled>
+                      <option value="">TOYOTA</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input_field">
+                  <label for="">เลือกรุ่น</label>
+                  <div class="custom_select">
+                    <select class="type" name="" id="" disabled>
+                      <option value="">CAMRY</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input_field">
+                  <label for="">เลือกปีรุ่น*</label>
+                  <div class="custom_select">
+                    <select class="type" name="" id="">
+                      <option value="">2022/ 2565</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input_field">
+                  <label for="">เลือกรุ่นย่อย*</label>
+                  <div class="custom_select">
+                    <select class="type" name="" id="">
+                      <option value="">Auto / 2.5 HEV PREMIUM</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <button class="interest-button">คํานวนดอกเบี้ยใหม่</button>
+                  <button class="reset-button">กรอกใหม่ทั้งหมด</button>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- filler -->
+<!-- container ตัวกรองข้อมูล -->
+<section class="filler-container main-section">
+  <div class="card-container filler">
+    <div class="filler-box" >
+      <div>
+        <h2>ตัวกรองข้อมูล</h2>
+      </div>
+      <div><i class="fa-solid fa-filter-list" onclick="switchFilterPopup()"></i></div>
+    </div>
+    <div class="filler-content">
+        <!-- filter-header -->
+  <div class="filter-header">
+    <h2>ตัวกรองข้อมูล</h2>
+  </div>
+  <!-- filter Class -->
+  <div class="filter-class-box">
+    <div class="filter-class">
+      <button>ชั้น 1</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 2+</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 3+</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 3</button>
+    </div>
+  </div>
+  <!-- เนื้อหาของกล่องฟิลเตอร์ -->
+  <div class="filter-select-box">
+    <div class="filter-header com1">
+      <h2>บริษัทประกันภัย</h2><i class="fa-solid fa-chevron-down" onclick="arrowSwitch('filterBoxCompanyCom', '.filter-header.com1 i')"></i>
+
+    </div>
+    <div id="filterBoxCompanyCom" class="filter-options-box show">
+      <div class="filter-Item">
+        <ul class="item-list">
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_bki_car.png" alt="Company Logo">
+              <span>กรุงเทพประกันภัย (10)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_safety_car.png" alt="Company Logo">
+              <span>คุ้มภัยโตเกียวมารีนประกันภัย (6)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_scb_car.png" alt="Company Logo">
+              <span>ชับบ์สามัคคีประกันภัย (35)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_dhipaya_car.png" alt="Company Logo">
+              <span>ทิพยประกันภัย (10)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_deves_car.png" alt="Company Logo">
+              <span>เทเวศประกันภัย (16)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_tsi_car.png" alt="Company Logo">
+              <span>ไทยเศรษฐกิจประกันภัย (6)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_tni_car.png" alt="Company Logo">
+              <span>ธนชาตประกันภัย (29)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_navakij_car.png" alt="Company Logo">
+              <span>นวกิจประกันภัย (3)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_viriyah_car.png" alt="Company Logo">
+              <span>วิริยะประกันภัย (15)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_zurich_car.png" alt="Company Logo">
+              <span>เออร์โกประกันภัย (9)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_axa_car.png" alt="Company Logo">
+              <span>แอกซ่าประกันภัย (12)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_lmg_car.png" alt="Company Logo">
+              <span>แอลเอ็มจีประกันภัย (7)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+           
+          <button class="show-more-btn" onclick="toggleVisibility()">แสดงเพิ่มเติม</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- เนื้อหาของกล่องฟิลเตอร์ -->
+  <div class="filter-select-box">
+    <div class="filter-header com2">
+      
+      <h2>ประเภทการซ่อม</h2><i class="fa-solid fa-chevron-down" onclick="arrowSwitch('filterBoxRepairCom', '.filter-header.com2 i')"></i>
+
+    </div>
+    <div id="filterBoxRepairCom" class="filter-options-box show">
+      <div class="filter-Item">
+        <ul class="item-list">
+          <li class="visible-item">
+            <div class="icon-title-box">
+            <div class="icon-box"> 
+            <i class="fa-solid fa-check-square"></i></div>
+              <span>เลือกทั้งหมด</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <div class="icon-box">   <i class="fa-solid fa-wrench"></i></div>
+         
+              <span>ซ่อมอู่</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+   
+            <div class="icon-box">      <i class="fa-solid fa-building"></i>
+            </div>
+              <span>ซ่อมห้าง</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--  button กรองข้อมูล -->
+  <button class="filter-button">กรองข้อมูล</button>
+
+
+    </div>
+  </div>
+</section>
+<!-- container ตัวกรองข้อมูล -->
+
+
+
+
+      </div>
+      <!-- list-card -->
+      <div class="right-container">
+        <section class="list-box main-section">
+          <div class="list-header">
+            <h2>ผลลัพธ์ <span>6 รายการ</span> </h2>
+            <div class="list-filler">
+              <div class="icon-list" id="sortIcon" data-sort-order="asc">
+                <i class="fa-duotone fa-solid fa-arrow-up-arrow-down up"></i>
+              </div>
+              <h2 id="sortLabel">ราคาจาก น้อย-มาก</h2>
+            </div>
+          </div>
+          <div class="list-container" id="listContainer">
+        <!-- รายละเอียด 1 -->
+            <div class="list-card">
+              <div class="list-top">
+                <div class="list-company">
+                  <div class="list-company-img">
+                    <img src="../../img/company/insur_scb_car.png" alt="">
+                  </div>
+                  <div class="list-company-header">
+                    <div class="list-company-name">ชับบ์สามัคคีประกันภัย</div>
+                    <div class="list-insurance-type">
+                      ประกันชั้น 2+
+                    </div>
+                  </div>
+                </div>
+                <div class="list-compare-box">
+                  <div class="checkbox-container">
+                  <input type="checkbox" class="compare-checkbox" 
+                 data-item="Item 1"
+                 data-price="6,674"
+                 data-floor="2+"
+                 data-image="../../img/company/insur_scb_car.png">
+                    <label for="compareCheckbox">เปรียบเทียบ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="list-center">
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+                  <div class="list-repair-text">ซ่อมอู่</div>
+                </div>
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+                  <div class="list-repair-text">ผ่อนได้</div>
+                </div>
+              </div>
+              <hr>
+              <div class="list-details1">
+                <div class="insurance-type">2+ Eco Package</div>
+        
+                <div class="insurance-fund">
+                  <div class="insurance-fund-label">ทุนประกัน</div>
+                  <div class="insurance-fund-value">200,000 บาท</div>
+                </div>
+        
+              </div>
+              <div class="list-details2">
+                <div class="deductible-info">
+                  <div class="deductible-label">ค่าเสียหายส่วนแรก</div>
+                  <div class="deductible-value">ไม่มี</div>
+                </div>
+        
+                <div class="payment-info">
+                  <div class="monthly-payment"><span>710</span> บาท/เดือน</div>
+                  <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+                </div>
+              </div>
+        
+            
+        
+              <!-- ปุ่มรายละเอียด -->
+              <div class="list-details3">
+                <button class="button-buy"onclick="window.location.href='/car-insurance/theme/page/insured-info/insured-info.php';">
+                  <div class="premium-container">
+                    <div class="price-box">
+                      <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                      <div class="price">฿6,674 <span class="discount">฿6,801</span> </div>
+                    </div>
+                    <div class="buy-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                  </div>
+                </button>
+                <button class="button-details" data-popup="detailsPopup1">รายละเอียด</button>
+              </div>
+            </div>
+        <!-- รายละเอียด 2 -->
+            <div class="list-card">
+              <div class="list-top">
+                <div class="list-company">
+                  <div class="list-company-img">
+                    <img src="../../img/company/insur_zurich_car.png" alt="">
+                  </div>
+                  <div class="list-company-header">
+                    <div class="list-company-name">เออร์โกประกันภัย</div>
+                    <div class="list-insurance-type">
+                      ประกันชั้น 2+
+                    </div>
+                  </div>
+                </div>
+                <div class="list-compare-box">
+                  <div class="checkbox-container">
+                  <input type="checkbox" class="compare-checkbox" 
+                 data-item="Item 2"
+                 data-price="5,500"
+                 data-floor="2+"
+                 data-image="../../img/company/insur_zurich_car.png">
+                    <label for="compareCheckbox">เปรียบเทียบ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="list-center">
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+                  <div class="list-repair-text">ซ่อมอู่</div>
+                </div>
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+                  <div class="list-repair-text">ผ่อนได้</div>
+                </div>
+              </div>
+              <hr>
+              <div class="list-details1">
+                <div class="insurance-type">Cover 2+ รหัส 110</div>
+        
+                <div class="insurance-fund">
+                  <div class="insurance-fund-label">ทุนประกัน</div>
+                  <div class="insurance-fund-value">100,000 บาท</div>
+                </div>
+        
+              </div>
+              <div class="list-details2">
+                <div class="deductible-info">
+                  <div class="deductible-label">ค่าเสียหายส่วนแรก</div>
+                  <div class="deductible-value">ไม่มี</div>
+                </div>
+        
+                <div class="payment-info">
+                  <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+                  <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+                </div>
+              </div>
+        
+        
+        
+            
+              <!-- ปุ่มรายละเอียด -->
+              <div class="list-details3">
+                <button class="button-buy"onclick="window.location.href='/car-insurance/theme/page/insured-info/insured-info.php';">
+                  <div class="premium-container">
+                    <div class="price-box">
+                      <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                      <div class="price">฿5,500 <span class="discount">฿5,695</span> </div>
+                    </div>
+                    <div class="buy-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                  </div>
+                </button>
+                <button class="button-details" data-popup="detailsPopup2">รายละเอียด</button>
+              </div>
+            </div>
+           <!-- รายละเอียด 3 --> 
+            <div class="list-card">
+              <div class="list-top">
+                <div class="list-company">
+                  <div class="list-company-img">
+                    <img src="../../img/company/insur_axa_car.png" alt="">
+                  </div>
+                  <div class="list-company-header">
+                    <div class="list-company-name">เเอกซ่าประกันภัย</div>
+                    <div class="list-insurance-type">
+                      ประกันชั้น 2+
+                    </div>
+                  </div>
+                </div>
+                <div class="list-compare-box">
+                  <div class="checkbox-container">
+                  <input type="checkbox" class="compare-checkbox" 
+                 data-item="Item 3"
+                 data-price="6,085"
+                 data-floor="2+"
+                 data-image="../../img/company/insur_axa_car.png">
+                    <label for="compareCheckbox">เปรียบเทียบ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="list-center">
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+                  <div class="list-repair-text">ซ่อมอู่</div>
+                </div>
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+                  <div class="list-repair-text">ผ่อนได้</div>
+                </div>
+              </div>
+              <hr>
+              <div class="list-details1">
+                <div class="insurance-type">Motor Type 2+</div>
+        
+                <div class="insurance-fund">
+                  <div class="insurance-fund-label">ทุนประกัน</div>
+                  <div class="insurance-fund-value">100,000 บาท</div>
+                </div>
+        
+              </div>
+              <div class="list-details2">
+                <div class="deductible-info">
+                  <div class="deductible-label">ค่าเสียหายส่วนแรก</div>
+                  <div class="deductible-value">2,000 บาท</div>
+                </div>
+        
+                <div class="payment-info">
+                  <div class="monthly-payment"><span>647</span> บาท/เดือน</div>
+                  <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+                </div>
+              </div>
+        
+          
+        
+              <!-- ปุ่มรายละเอียด -->
+              <div class="list-details3">
+                <button class="button-buy"onclick="window.location.href='/car-insurance/theme/page/insured-info/insured-info.php';">
+                  <div class="premium-container">
+                    <div class="price-box">
+                      <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                      <div class="price">฿6,085 <span class="discount">฿6,201</span> </div>
+                    </div>
+                    <div class="buy-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                  </div>
+                </button>
+                <button class="button-details" data-popup="detailsPopup3" >รายละเอียด</button>
+              </div>
+            </div>
+        
+           <!-- รายละเอียด 4 --> 
+            <div class="list-card">
+              <div class="list-top">
+                <div class="list-company">
+                  <div class="list-company-img">
+                    <img src="../../img/company/insur_tvi_car.png" alt="">
+                  </div>
+                  <div class="list-company-header">
+                    <div class="list-company-name">ประกันภัยไทยวิวัฒน์</div>
+                    <div class="list-insurance-type">
+                      ประกันชั้น 2+
+                    </div>
+                  </div>
+                </div>
+                <div class="list-compare-box">
+                  <div class="checkbox-container">
+                  <input type="checkbox" class="compare-checkbox" 
+                 data-item="Item 4"
+                 data-price="3,000"
+                 data-floor="2+"
+                 data-image="../../img/company/insur_tvi_car.png">
+                    <label for="compareCheckbox">เปรียบเทียบ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="list-center">
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+                  <div class="list-repair-text">ซ่อมอู่</div>
+                </div>
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+                  <div class="list-repair-text">ผ่อนได้</div>
+                </div>
+              </div>
+              <hr>
+              <div class="list-details1">
+                <div class="insurance-type">Motor Type 2+</div>
+        
+                <div class="insurance-fund">
+                  <div class="insurance-fund-label">ทุนประกัน</div>
+                  <div class="insurance-fund-value">100,000 บาท</div>
+                </div>
+        
+              </div>
+              <div class="list-details2">
+                <div class="deductible-info">
+                  <div class="deductible-label">ค่าเสียหายส่วนแรก</div>
+                  <div class="deductible-value">2,000 บาท</div>
+                </div>
+        
+                <div class="payment-info">
+                  <div class="monthly-payment"><span>647</span> บาท/เดือน</div>
+                  <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+                </div>
+              </div>
+        
+          
+        
+              <!-- ปุ่มรายละเอียด -->
+              <div class="list-details3">
+                <button class="button-buy"onclick="window.location.href='/car-insurance/theme/page/insured-info/insured-info.php';">
+                  <div class="premium-container">
+                    <div class="price-box">
+                      <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                      <div class="price">฿3,000 <span class="discount">฿2,000</span> </div>
+                    </div>
+                    <div class="buy-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                  </div>
+                </button>
+                <button class="button-details" data-popup="detailsPopup4" >รายละเอียด</button>
+              </div>
+            </div>
+         <!-- รายละเอียด 5 -->
+            <div class="list-card">
+              <div class="list-top">
+                <div class="list-company">
+                  <div class="list-company-img">
+                    <img src="../../img/company/insur_tsi_car.png" alt="">
+                  </div>
+                  <div class="list-company-header">
+                    <div class="list-company-name">ไทยเศรษฐกิจประกันภัย</div>
+                    <div class="list-insurance-type">
+                      ประกันชั้น 2+
+                    </div>
+                  </div>
+                </div>
+                <div class="list-compare-box">
+                  <div class="checkbox-container">
+                  <input type="checkbox" class="compare-checkbox" 
+                 data-item="Item 5"
+                 data-price="9,084"
+                 data-floor="2+"
+                 data-image="../../img/company/insur_tsi_car.png">
+                    <label for="compareCheckbox">เปรียบเทียบ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="list-center">
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+                  <div class="list-repair-text">ซ่อมอู่</div>
+                </div>
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+                  <div class="list-repair-text">ผ่อนได้</div>
+                </div>
+              </div>
+              <hr>
+              <div class="list-details1">
+                <div class="insurance-type">Motor Type 2+</div>
+        
+                <div class="insurance-fund">
+                  <div class="insurance-fund-label">ทุนประกัน</div>
+                  <div class="insurance-fund-value">100,000 บาท</div>
+                </div>
+        
+              </div>
+              <div class="list-details2">
+                <div class="deductible-info">
+                  <div class="deductible-label">ค่าเสียหายส่วนแรก</div>
+                  <div class="deductible-value">2,000 บาท</div>
+                </div>
+        
+                <div class="payment-info">
+                  <div class="monthly-payment"><span>647</span> บาท/เดือน</div>
+                  <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+                </div>
+              </div>
+        
+          
+        
+              <!-- ปุ่มรายละเอียด -->
+              <div class="list-details3">
+                <button class="button-buy"onclick="window.location.href='/car-insurance/theme/page/insured-info/insured-info.php';">
+                  <div class="premium-container">
+                    <div class="price-box">
+                      <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                      <div class="price">฿9,084 <span class="discount">฿7,201</span> </div>
+                    </div>
+                    <div class="buy-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                  </div>
+                </button>
+                <button class="button-details" data-popup="detailsPopup5" >รายละเอียด </button>
+              </div>
+            </div>
+             <!-- รายละเอียด 6 -->
+            <div class="list-card">
+              <div class="list-top">
+                <div class="list-company">
+                  <div class="list-company-img">
+                    <img src="../../img/company/insur_safety_car.png" alt="">
+                  </div>
+                  <div class="list-company-header">
+                    <div class="list-company-name">คุ้มภัยโตเกียวมารีนประกันภัย</div>
+                    <div class="list-insurance-type">
+                      ประกันชั้น 2+
+                    </div>
+                  </div>
+                </div>
+                <div class="list-compare-box">
+                  <div class="checkbox-container">
+                  <input type="checkbox" class="compare-checkbox" 
+                 data-item="Item 6"
+                 data-price="5,084"
+                 data-floor="2+"
+                 data-image="../../img/company/insur_safety_car.png">
+                    <label for="compareCheckbox">เปรียบเทียบ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="list-center">
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+                  <div class="list-repair-text">ซ่อมอู่</div>
+                </div>
+                <div class="list-repair-type">
+                  <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+                  <div class="list-repair-text">ผ่อนได้</div>
+                </div>
+              </div>
+              <hr>
+              <div class="list-details1">
+                <div class="insurance-type">Motor Type 2+</div>
+        
+                <div class="insurance-fund">
+                  <div class="insurance-fund-label">ทุนประกัน</div>
+                  <div class="insurance-fund-value">100,000 บาท</div>
+                </div>
+        
+              </div>
+              <div class="list-details2">
+                <div class="deductible-info">
+                  <div class="deductible-label">ค่าเสียหายส่วนแรก</div>
+                  <div class="deductible-value">2,000 บาท</div>
+                </div>
+        
+                <div class="payment-info">
+                  <div class="monthly-payment"><span>647</span> บาท/เดือน</div>
+                  <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+                </div>
+              </div>
+        
+          
+        
+              <!-- ปุ่มรายละเอียด -->
+              <div class="list-details3">
+                <button class="button-buy"onclick="window.location.href='/car-insurance/theme/page/insured-info/insured-info.php';">
+                  <div class="premium-container">
+                    <div class="price-box">
+                      <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                      <div class="price">฿5,085 <span class="discount">฿4,201</span> </div>
+                    </div>
+                    <div class="buy-icon"><i class="fa-solid fa-chevron-right"></i></div>
+                  </div>
+                </button>
+                <button class="button-details" data-popup="detailsPopup6" >รายละเอียด</button>
+              </div>
+            </div>
+        
+        
+          </div>
+        
+        </section>
+      </div>
+    </div>
+  <!-- Popup ที่จะใช้แสดงรายการที่เลือก -->
+  <div id="compare-popup" class="popup">
+    <button  class="compare-open-btn"><a href="../../page/check-insurance/check-insurance.php"><i class="fa-solid fa-check"></i></a></button>
+    <button id="close-popup" class="outside-close-btn"><i class="fa-solid fa-x"></i></button>
+    <div class="compare-slots">
+      <div class="compare-slot" id="slot-1" data-placeholder="รายการที่ 1">
+   
+
+      </div>
+
+      <div class="compare-slot" id="slot-2" data-placeholder="รายการที่ 2">
+ 
+      </div>
+      <div class="compare-slot" id="slot-3" data-placeholder="รายการที่ 3">
+  
+
+      </div>
+      <div class="compare-slot" id="slot-4" data-placeholder="รายการที่ 4">
+ 
+
+      </div>
+    </div>
+
+  </div>
+    <!-- fillerPopup -->
+<!-- พื้นหลังสีเทา -->
+<div id="backdrop" onclick="switchFilterPopup()" class="backdrop"></div>
+
+<!-- กล่องฟิลเตอร์ -->
+<div id="filterBox" class="filter-box-pop">
+  <button onclick="closeFilter()" class="btn-close"><i class="fa-solid fa-x"></i></button>
+  <!-- filter-header -->
+  <div class="filter-header">
+    <h2>ตัวกรองข้อมูล</h2>
+  </div>
+  <!-- filter Class -->
+  <div class="filter-class-box">
+    <div class="filter-class">
+      <button>ชั้น 1</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 2+</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 3+</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 3</button>
+    </div>
+  </div>
+  <!-- เนื้อหาของกล่องฟิลเตอร์ -->
+  <div class="filter-select-box">
+    <div class="filter-header mobile1">
+      <h2>บริษัทประกันภัย</h2><i class="fa-solid fa-chevron-down" onclick="arrowSwitch('filterBoxCompany', '.filter-header.mobile1 i')"></i>
+
+    </div>
+    <div id="filterBoxCompany" class="filter-options-box show">
+      <div class="filter-Item">
+        <ul class="item-list">
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_bki_car.png" alt="Company Logo">
+              <span>กรุงเทพประกันภัย (10)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_safety_car.png" alt="Company Logo">
+              <span>คุ้มภัยโตเกียวมารีนประกันภัย (6)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_scb_car.png" alt="Company Logo">
+              <span>ชับบ์สามัคคีประกันภัย (35)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_dhipaya_car.png" alt="Company Logo">
+              <span>ทิพยประกันภัย (10)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_deves_car.png" alt="Company Logo">
+              <span>เทเวศประกันภัย (16)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_tsi_car.png" alt="Company Logo">
+              <span>ไทยเศรษฐกิจประกันภัย (6)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_tni_car.png" alt="Company Logo">
+              <span>ธนชาตประกันภัย (29)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_navakij_car.png" alt="Company Logo">
+              <span>นวกิจประกันภัย (3)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_viriyah_car.png" alt="Company Logo">
+              <span>วิริยะประกันภัย (15)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_zurich_car.png" alt="Company Logo">
+              <span>เออร์โกประกันภัย (9)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_axa_car.png" alt="Company Logo">
+              <span>แอกซ่าประกันภัย (12)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_lmg_car.png" alt="Company Logo">
+              <span>แอลเอ็มจีประกันภัย (7)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+           
+          <button class="show-more-btn" onclick="toggleVisibility()">แสดงเพิ่มเติม</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- เนื้อหาของกล่องฟิลเตอร์ -->
+  <div class="filter-select-box">
+    <div class="filter-header mobile2">
+      
+      <h2>ประเภทการซ่อม</h2><i class="fa-solid fa-chevron-down" onclick="arrowSwitch('filterBoxRepair', '.filter-header.mobile2 i')"></i>
+
+    </div>
+    <div id="filterBoxRepair" class="filter-options-box show">
+      <div class="filter-Item">
+        <ul class="item-list">
+          <li class="visible-item">
+            <div class="icon-title-box">
+            <div class="icon-box"> 
+            <i class="fa-solid fa-check-square"></i></div>
+              <span>เลือกทั้งหมด</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <div class="icon-box">   <i class="fa-solid fa-wrench"></i></div>
+         
+              <span>ซ่อมอู่</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+   
+            <div class="icon-box">      <i class="fa-solid fa-building"></i>
+            </div>
+              <span>ซ่อมห้าง</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--  button กรองข้อมูล -->
+  <button class="filter-button">กรองข้อมูล</button>
+
+
+
+</div>
+    <!-- list-card-popup -->
+  <!-- ป็อปอัปสำหรับรายละเอียด 1 -->
+  <div id="detailsPopup1" class="popup-list-card">
+    <div class="popup-list-card-content">
+        <span class="close-button-popup-list-card" onclick="closeDetailsPopup()"><i class="fa-solid fa-x"></i></span>
+        <!--ส่วนเนื้อหาใน popup-->
+        <div class="list-top">
+          <div class="list-company">
+            <div class="list-company-img">
+              <img src="theme/img/company/insur_scb_car.png" alt="">
+            </div>
+            <div class="list-company-header">
+              <div class="list-company-name popupcompany">ชับบ์สามัคคีประกันภัย</div>
+              <div class="list-insurance-type">
+                ประกันชั้น 2+
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+            <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+          </div>
+        </div>
+        <div class="list-center">
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+            <div class="list-repair-text">ซ่อมอู่</div>
+          </div>
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+            <div class="list-repair-text">ผ่อนได้</div>
+          </div>
+        </div>
+        <hr class="hr-card-details">
+        <div class="filter-select-box list-card-popup">
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองรถยนต์</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่าเสียหายส่วนแรก</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    ไม่มี
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์เสียหาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์สูญหาย / ไฟไหม้</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองภายนอก (บุคคลที่ 3)</h2> <!--  <i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i>-->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ทรัพย์สิน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    1,000,000 / ครั้ง
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ร่างกาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    500,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>บาดเจ็บ + เสียชีวิต</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    10,000,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองบุคคลภายในรถ</h2> <!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้โดยสาร 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ประกันตัวผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    200,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list-details3 card-details">
+          <button class="button-buy">
+            <div class="premium-container">
+              <div class="price-box">
+                <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                <div class="price">฿6,674 <span class="discount">฿6,001</span> </div>
+              </div>
+              <div class="buy-icon">ซื้อเลย</div>
+            </div>
+          </button>
+     
+        </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  
+  
+    <!-- ป็อปอัปสำหรับรายละเอียด 2 -->
+    <div id="detailsPopup2" class="popup-list-card">
+      <div class="popup-list-card-content">
+        <span class="close-button-popup-list-card" onclick="closeDetailsPopup()"><i class="fa-solid fa-x"></i></span>
+        <!--ส่วนเนื้อหาใน popup-->
+        <div class="list-top">
+          <div class="list-company">
+            <div class="list-company-img">
+              <img src="theme/img/company/insur_zurich_car.png" alt="">
+            </div>
+            <div class="list-company-header">
+              <div class="list-company-name popupcompany">เออร์โกประกันภัย</div>
+              <div class="list-insurance-type">
+                ประกันชั้น 2+
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+            <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+          </div>
+        </div>
+        <div class="list-center">
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+            <div class="list-repair-text">ซ่อมอู่</div>
+          </div>
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+            <div class="list-repair-text">ผ่อนได้</div>
+          </div>
+        </div>
+        <hr class="hr-card-details">
+        <div class="filter-select-box list-card-popup">
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองรถยนต์</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่าเสียหายส่วนแรก</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    ไม่มี
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์เสียหาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์สูญหาย / ไฟไหม้</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองภายนอก (บุคคลที่ 3)</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ทรัพย์สิน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    1,000,000 / ครั้ง
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ร่างกาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    500,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>บาดเจ็บ + เสียชีวิต</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    10,000,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองบุคคลภายในรถ</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้โดยสาร 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ประกันตัวผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    200,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list-details3 card-details">
+          <button class="button-buy">
+            <div class="premium-container">
+              <div class="price-box">
+                <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                <div class="price">฿5,500 <span class="discount">฿5,695</span> </div>
+              </div>
+              <div class="buy-icon">ซื้อเลย</div>
+            </div>
+          </button>
+     
+        </div>
+  
+  
+  
+  
+      </div>
+      <!-- ส่วนเนื้อหาใน popup- -->
+    </div>
+   
+  
+  
+    <!-- ป็อปอัปสำหรับรายละเอียด 3 -->
+    <div id="detailsPopup3" class="popup-list-card">
+    <div class="popup-list-card-content">
+        <span class="close-button-popup-list-card" onclick="closeDetailsPopup()"><i class="fa-solid fa-x"></i></span>
+        <!--ส่วนเนื้อหาใน popup-->
+        <div class="list-top">
+          <div class="list-company">
+            <div class="list-company-img">
+              <img src="theme/img/company/insur_axa_car.png" alt="">
+            </div>
+            <div class="list-company-header">
+              <div class="list-company-name popupcompany">เออร์โกประกันภัย</div>
+              <div class="list-insurance-type">
+                ประกันชั้น 2+
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+            <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+          </div>
+        </div>
+        <div class="list-center">
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+            <div class="list-repair-text">ซ่อมอู่</div>
+          </div>
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+            <div class="list-repair-text">ผ่อนได้</div>
+          </div>
+        </div>
+        <hr class="hr-card-details">
+        <div class="filter-select-box list-card-popup">
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองรถยนต์</h2> <!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่าเสียหายส่วนแรก</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    ไม่มี
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์เสียหาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์สูญหาย / ไฟไหม้</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองภายนอก (บุคคลที่ 3)</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ทรัพย์สิน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    1,000,000 / ครั้ง
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ร่างกาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    500,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>บาดเจ็บ + เสียชีวิต</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    10,000,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองบุคคลภายในรถ</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้โดยสาร 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ประกันตัวผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    200,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list-details3 card-details">
+          <button class="button-buy">
+            <div class="premium-container">
+              <div class="price-box">
+                <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                <div class="price">฿6,085 <span class="discount">฿6,201</span> </div>
+              </div>
+              <div class="buy-icon">ซื้อเลย</div>
+            </div>
+          </button>
+     
+        </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  
+  
+    <!-- ป็อปอัปสำหรับรายละเอียด 4 -->
+    <div id="detailsPopup4" class="popup-list-card">
+    <div class="popup-list-card-content">
+        <span class="close-button-popup-list-card" onclick="closeDetailsPopup()"><i class="fa-solid fa-x"></i></span>
+        <!--ส่วนเนื้อหาใน popup-->
+        <div class="list-top">
+          <div class="list-company">
+            <div class="list-company-img">
+              <img src="theme/img/company/insur_tvi_car.png" alt="">
+            </div>
+            <div class="list-company-header">
+              <div class="list-company-name popupcompany">ประกันภัยไทยวิวัฒน์</div>
+              <div class="list-insurance-type">
+                ประกันชั้น 2+
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+            <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+          </div>
+        </div>
+        <div class="list-center">
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+            <div class="list-repair-text">ซ่อมอู่</div>
+          </div>
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+            <div class="list-repair-text">ผ่อนได้</div>
+          </div>
+        </div>
+        <hr class="hr-card-details">
+        <div class="filter-select-box list-card-popup">
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองรถยนต์</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่าเสียหายส่วนแรก</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    ไม่มี
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์เสียหาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์สูญหาย / ไฟไหม้</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองภายนอก (บุคคลที่ 3)</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ทรัพย์สิน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    1,000,000 / ครั้ง
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ร่างกาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    500,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>บาดเจ็บ + เสียชีวิต</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    10,000,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองบุคคลภายในรถ</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้โดยสาร 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ประกันตัวผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    200,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list-details3 card-details">
+          <button class="button-buy">
+            <div class="premium-container">
+              <div class="price-box">
+                <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                <div class="price">฿3,000 <span class="discount"> ฿2,000 </span> </div>
+              </div>
+              <div class="buy-icon">ซื้อเลย</div>
+            </div>
+          </button>
+     
+        </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  
+  
+    <!-- ป็อปอัปสำหรับรายละเอียด 5 -->
+    <div id="detailsPopup5" class="popup-list-card">
+    <div class="popup-list-card-content">
+        <span class="close-button-popup-list-card" onclick="closeDetailsPopup()"><i class="fa-solid fa-x"></i></span>
+        <!--ส่วนเนื้อหาใน popup-->
+        <div class="list-top">
+          <div class="list-company">
+            <div class="list-company-img">
+              <img src="../../img/company/insur_tsi_car.png" alt="">
+            </div>
+            <div class="list-company-header">
+              <div class="list-company-name popupcompany">ไทยเศรษฐกิจประกันภัย</div>
+              <div class="list-insurance-type">
+                ประกันชั้น 2+
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+            <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+          </div>
+        </div>
+        <div class="list-center">
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+            <div class="list-repair-text">ซ่อมอู่</div>
+          </div>
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+            <div class="list-repair-text">ผ่อนได้</div>
+          </div>
+        </div>
+        <hr class="hr-card-details">
+        <div class="filter-select-box list-card-popup">
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองรถยนต์</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่าเสียหายส่วนแรก</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    ไม่มี
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์เสียหาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์สูญหาย / ไฟไหม้</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองภายนอก (บุคคลที่ 3)</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ทรัพย์สิน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    1,000,000 / ครั้ง
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ร่างกาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    500,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>บาดเจ็บ + เสียชีวิต</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    10,000,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองบุคคลภายในรถ</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้โดยสาร 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ประกันตัวผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    200,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list-details3 card-details">
+          <button class="button-buy">
+            <div class="premium-container">
+              <div class="price-box">
+                <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                <div class="price">฿9,084 <span class="discount">฿7,201</span> </div>
+              </div>
+              <div class="buy-icon">ซื้อเลย</div>
+            </div>
+          </button>
+     
+        </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  
+  
+    <!-- ป็อปอัปสำหรับรายละเอียด 6 -->
+    <div id="detailsPopup6" class="popup-list-card">
+    <div class="popup-list-card-content">
+        <span class="close-button-popup-list-card" onclick="closeDetailsPopup()"><i class="fa-solid fa-x"></i></span>
+        <!--ส่วนเนื้อหาใน popup-->
+        <div class="list-top">
+          <div class="list-company">
+            <div class="list-company-img">
+              <img src="../../img/company/insur_safety_car.png"" alt="">
+            </div>
+            <div class="list-company-header">
+              <div class="list-company-name popupcompany">คุ้มภัยโตเกียวมารีนประกันภัย</div>
+              <div class="list-insurance-type">
+                ประกันชั้น 2+
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <div class="monthly-payment"><span>594</span> บาท/เดือน</div>
+            <div class="payment-term">(ผ่อนสูงสุด นาน 10 เดือน)</div>
+          </div>
+        </div>
+        <div class="list-center">
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-sharp-duotone fa-solid fa-car-wrench"></i></div>
+            <div class="list-repair-text">ซ่อมอู่</div>
+          </div>
+          <div class="list-repair-type">
+            <div class="list-repair-icon"><i class="fa-solid fa-money-bill-wave"></i> </div>
+            <div class="list-repair-text">ผ่อนได้</div>
+          </div>
+        </div>
+        <hr class="hr-card-details">
+        <div class="filter-select-box list-card-popup">
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองรถยนต์</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่าเสียหายส่วนแรก</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    ไม่มี
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์เสียหาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>รถยนต์สูญหาย / ไฟไหม้</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 บาท
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองภายนอก (บุคคลที่ 3)</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ทรัพย์สิน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    1,000,000 / ครั้ง
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ร่างกาย</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    500,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>บาดเจ็บ + เสียชีวิต</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    10,000,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="filter-header card-details">
+  
+            <h2>คุ้มครองบุคคลภายในรถ</h2><!--<i class="fa-solid fa-chevron-down" onclick="arrowSwitch('car-protection', '.filter-header.card-details i')"></i> -->
+  
+          </div>
+          <div id="car-protection" class="filter-options-box show">
+            <div class="filter-Item">
+              <ul class="item-list">
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+  
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ผู้โดยสารเสียชีวิต 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ค่ารักษาพยาบาลผู้โดยสาร 4 คน</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    100,000 / คน
+                  </div>
+                </li>
+                <li class="visible-item">
+                  <div class="icon-title-box card-details">
+  
+                    <span>ประกันตัวผู้ขับขี่</span>
+                  </div>
+                  <div class="checkbox-container card-details">
+                    200,000 / ครั้ง
+                  </div>
+                </li>
+                <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list-details3 card-details">
+          <button class="button-buy">
+            <div class="premium-container">
+              <div class="price-box">
+                <div class="insurance-premium">เบี้ยประกัน/ปี</div>
+                <div class="price">฿5,084 <span class="discount">฿4,201</span> </div>
+              </div>
+              <div class="buy-icon">ซื้อเลย</div>
+            </div>
+          </button>
+     
+        </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  
+  
+  
+
+    <script src="../../component/sidenav/sidenav.js"></script>
+    <script src="../../component/vehicleInfoCard/switchForm.js"></script>
+
+    <script src="../../component/fillerPopup/switchFilterPopup.js"></script>
+    <script src="../../component/fillerPopup/toggleVisibility.js"></script>
+    <script src="../../component/fillerPopup/arrowSwitch.js"></script>
+    <script src="../../component/popup/popup.js"></script>
+    <script src="../../component/list-card/list-sort.js"></script>
+    <script src="../../component/list-card-popup/list-card-popup.js"></script>
+    <script src="../../component/navbar/dropdown.js"></script>
+    <script>
+      // เปิดป็อปอัปทันทีเมื่อโหลดหน้า
+      window.addEventListener("load", function () {
+        openPopup();
+
+        // ปิดป็อปอัปหลังจาก 20 วินาที
+        setTimeout(closePopup, 5000); // 20000 มิลลิวินาที = 20 วินาที
+      });
+
+      // Initial sorting when the page loads (sort from low to high)
+      window.addEventListener("load", function () {
+        sortList("asc");
+      });
+    </script>
+
+    <script src="../../component/list-card/comparison-list.js"></script>
+  </body>
+</html>

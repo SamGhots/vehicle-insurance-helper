@@ -1,0 +1,168 @@
+.selected-vehicle {
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.card-container {
+  display: grid;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+
+}
+
+.selected-vehicle .title-contaienr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-vehicle .title-contaienr .vehicle-Info {
+  display: flex;
+  align-items: center;
+}
+
+.selected-vehicle .car-information h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.selected-vehicle .small-details {
+  font-size: 12px;
+  font-weight: 400;
+  color: #222;
+}
+.selected-vehicle .card-container .edit-form{
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* เพิ่ม transition */
+  
+}
+.selected-vehicle .card-container .edit-form:hover{
+  transform: translateY(-2px); /* ยกปุ่มขึ้น */
+ 
+}
+.selected-vehicle .card-container .edit-form button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-white);
+  /* สีข้อความ */
+  background-color: var(--color-accent);
+  /* สีเหลือง */
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.selected-vehicle .card-container .edit-form button:active{
+  background-color: var(--color-accent-hover);
+}
+
+
+/*============================ form =========================================*/
+/* สำหรับการแสดง/ซ่อนฟอร์มด้วยการเลื่อนและการเปลี่ยนความโปร่งใส */
+.wrapper {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.wrapper.show {
+  max-height: 1000px; /* ปรับขนาดตามความต้องการ */
+  opacity: 1;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.wrapper .form .input_field label {
+  width: 130px;
+  /*กําหนด ความยาวของ laabel หัวข้อของfiled*/
+  color: #222;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: end;
+  /*กําหนด ให้ หัวข้อ label ขยับไปใกล้ field */
+}
+
+
+/* Custom select styling */
+.input_field .custom_select {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+/*=== กําหนด style field select ทั้งหมด ====*/
+.wrapper .form .input_field .custom_select select {
+  border: 1px solid #c1b9b9;
+  appearance: none;
+  /* Hide default arrow */
+  width: 100%;
+  /* ยืดช่อง field select ให้เต็มจอ*/
+  height: 100%;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  color: #79797b;
+  /* Text color of the selected option */
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M0 2l5 5 5-5z" fill="%234467bc"/></svg>') no-repeat right 10px center;
+  /* สร้างลูกศร*/
+  background-size: 10px 10px;
+  /* Adjust the size of the arrow */
+}
+
+
+/* ปุ่มและ input ที่ถูกปิดการใช้งาน */
+button[data-select]:disabled, input:disabled, select:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(222 222 222 / var(--tw-bg-opacity)) !important; /* สีพื้นหลัง */
+  color: #777; /* สีข้อความ */
+  cursor: not-allowed; /* เปลี่ยนเป็น cursor แสดงว่าไม่สามารถคลิกได้ */
+}
+
+.button-box {
+  display: grid;
+  gap: 10px;
+}
+.interest-button{
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; 
+}
+.interest-button:hover{
+  transform: translateY(-2px); /* ยกปุ่มขึ้น */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* เงาลึกขึ้น */
+}
+.interest-button:active{
+  background-color: var(--color-primary-hover);
+}
+.reset-button{
+color: #777;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* เพิ่ม transition */
+
+}
+.reset-button:hover{
+    transform: translateY(-2px); /* ยกปุ่มขึ้น */
+}
+
+/*============================ form =========================================*/
+
+
+
+
+

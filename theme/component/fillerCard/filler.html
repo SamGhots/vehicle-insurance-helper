@@ -1,0 +1,214 @@
+<!-- container ตัวกรองข้อมูล -->
+<section class="filler-container main-section">
+  <div class="card-container filler">
+    <div class="filler-box" >
+      <div>
+        <h2>ตัวกรองข้อมูล</h2>
+      </div>
+      <div><i class="fa-solid fa-filter-list" onclick="switchFilterPopup()"></i></div>
+    </div>
+    <div class="filler-content">
+        <!-- filter-header -->
+  <div class="filter-header">
+    <h2>ตัวกรองข้อมูล</h2>
+  </div>
+  <!-- filter Class -->
+  <div class="filter-class-box">
+    <div class="filter-class">
+      <button>ชั้น 1</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 2+</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 3+</button>
+    </div>
+    <div class="filter-class">
+      <button>ชั้น 3</button>
+    </div>
+  </div>
+  <!-- เนื้อหาของกล่องฟิลเตอร์ -->
+  <div class="filter-select-box">
+    <div class="filter-header com1">
+      <h2>บริษัทประกันภัย</h2><i class="fa-solid fa-chevron-down" onclick="arrowSwitch('filterBoxCompanyCom', '.filter-header.com1 i')"></i>
+
+    </div>
+    <div id="filterBoxCompanyCom" class="filter-options-box show">
+      <div class="filter-Item">
+        <ul class="item-list">
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_bki_car.png" alt="Company Logo">
+              <span>กรุงเทพประกันภัย (10)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_safety_car.png" alt="Company Logo">
+              <span>คุ้มภัยโตเกียวมารีนประกันภัย (6)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_scb_car.png" alt="Company Logo">
+              <span>ชับบ์สามัคคีประกันภัย (35)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_dhipaya_car.png" alt="Company Logo">
+              <span>ทิพยประกันภัย (10)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_deves_car.png" alt="Company Logo">
+              <span>เทเวศประกันภัย (16)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_tsi_car.png" alt="Company Logo">
+              <span>ไทยเศรษฐกิจประกันภัย (6)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_tni_car.png" alt="Company Logo">
+              <span>ธนชาตประกันภัย (29)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_navakij_car.png" alt="Company Logo">
+              <span>นวกิจประกันภัย (3)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_viriyah_car.png" alt="Company Logo">
+              <span>วิริยะประกันภัย (15)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_zurich_car.png" alt="Company Logo">
+              <span>เออร์โกประกันภัย (9)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_axa_car.png" alt="Company Logo">
+              <span>แอกซ่าประกันภัย (12)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <li class="hidden-item">
+            <div class="icon-title-box">
+              <img src="../../img/company/insur_lmg_car.png" alt="Company Logo">
+              <span>แอลเอ็มจีประกันภัย (7)</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company2" name="company2">
+            </div>
+          </li>
+          <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+           
+          <button class="show-more-btn" onclick="toggleVisibility()">แสดงเพิ่มเติม</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- เนื้อหาของกล่องฟิลเตอร์ -->
+  <div class="filter-select-box">
+    <div class="filter-header com2">
+      
+      <h2>ประเภทการซ่อม</h2><i class="fa-solid fa-chevron-down" onclick="arrowSwitch('filterBoxRepairCom', '.filter-header.com2 i')"></i>
+
+    </div>
+    <div id="filterBoxRepairCom" class="filter-options-box show">
+      <div class="filter-Item">
+        <ul class="item-list">
+          <li class="visible-item">
+            <div class="icon-title-box">
+            <div class="icon-box"> 
+            <i class="fa-solid fa-check-square"></i></div>
+              <span>เลือกทั้งหมด</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+              <div class="icon-box">   <i class="fa-solid fa-wrench"></i></div>
+         
+              <span>ซ่อมอู่</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <li class="visible-item">
+            <div class="icon-title-box">
+   
+            <div class="icon-box">      <i class="fa-solid fa-building"></i>
+            </div>
+              <span>ซ่อมห้าง</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="company1" name="company1">
+            </div>
+          </li>
+          <!-- เพิ่มรายการบริษัทที่ต้องการซ่อนไว้ที่นี่ -->
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--  button กรองข้อมูล -->
+  <button class="filter-button">กรองข้อมูล</button>
+
+
+    </div>
+  </div>
+</section>
+<!-- container ตัวกรองข้อมูล -->
+
+
+

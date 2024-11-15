@@ -1,0 +1,39 @@
+/* สไตล์ของป็อปอัป */
+.popup-call {
+  display: none; /* ซ่อนไว้เริ่มต้น */
+  position: fixed;
+  bottom: 20px; /* ให้แสดงที่มุมล่าง */
+  left: 20px; /* ให้แสดงที่มุมซ้าย */
+  width: 300px; /* ความกว้างของป็อปอัป */
+  background-color:var(--color-primary);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* เงา */
+  border-radius: 5px; /* มุมมน */
+  z-index: 1000; /* ให้อยู่เหนือเนื้อหาทั้งหมด */
+}
+
+/* สไตล์ของเนื้อหาภายในป็อปอัป */
+.popup-content {
+  padding: 15px;
+  position: relative;
+}
+
+/* ปุ่มปิดป็อปอัป */
+.close-button {
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px; 
+  color: #ffffff;
+}
+
+.close-button:hover {
+  color: #333; /* สีของปุ่มปิดเมื่อเอาเมาส์ไปวาง */
+}
+
+/* ข้อความในป็อปอัป */
+.popup-call p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-white);
+}

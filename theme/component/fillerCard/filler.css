@@ -1,0 +1,86 @@
+.filler-box{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวแกน Y */
+}
+.card-container.filler{
+  padding: 20px 20px 20px 20px;
+}
+.filler-box h2{
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.filler-box i{
+  color: var(--color-primary);
+}
+
+
+.filler-content{
+  display: none;
+
+}
+
+
+
+
+
+
+
+/*============== id นําไปใช้เปิดปิด   ประเภทการซ่อม   =============== */
+
+#filterBoxCompanyCom {
+  height: 100%;
+  opacity: 1; /* ให้กล่องเริ่มต้นแสดง */
+  overflow: hidden; /* ซ่อนเนื้อหาที่เกินออกไป */
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* การเปลี่ยนแปลงนุ่มนวล */
+}
+
+
+/* ซ่อนกล่อง */
+#filterBoxCompanyCom.hide {
+  max-height: 0; /* ทำให้ไม่เห็น */
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* แสดงกล่อง */
+#filterBoxCompanyCom.show {
+  max-height: 1000px; /* ปรับค่าตามขนาดกล่อง */
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+/*============== id นําไปใช้เปิดปิด   ประเภทการซ่อม   =============== */
+
+
+
+/*============== id นําไปใช้เปิดปิด   ประเภทการซ่อม   =============== */
+#filterBoxRepairCom{
+  height: 100%;
+  opacity: 1; /* ให้กล่องเริ่มต้นแสดง */
+  overflow: hidden; /* ซ่อนเนื้อหาที่เกินออกไป */
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* การเปลี่ยนแปลงนุ่มนวล */
+}
+
+
+/* ซ่อนกล่อง */
+#filterBoxRepairCom.hide {
+  max-height: 0; /* ทำให้ไม่เห็น */
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* แสดงกล่อง */
+#filterBoxRepairCom.show {
+  max-height: 1000px; /* ปรับค่าตามขนาดกล่อง */
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+
+
