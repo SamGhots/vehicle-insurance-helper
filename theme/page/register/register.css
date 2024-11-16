@@ -236,6 +236,9 @@ font-size: 14px;
   /* กำหนด padding สำหรับหน้าจอใหญ่ */
 }
 
+.agreement{
+  font-size: 12px !important;
+}
 /* สำหรับหน้าจอแท็บเล็ต (หน้าจอขนาดกลาง) */
 @media (max-width: 1024px) {
   .register-container {

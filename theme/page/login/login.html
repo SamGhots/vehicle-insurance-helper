@@ -31,73 +31,67 @@
     rel="stylesheet"
     href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
   <!--=============== ICONS ===============-->
-  <link rel="stylesheet" href="register.css">
-  <link rel="stylesheet" href="../../css/style.css"> 
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
 </head>
 
 <body>
-  <section class="register-container">
-      <!-- ปุ่มลูกศรกลับ -->
-  <div class="back-arrow">
-    <a href="../../page/login/login.php"> <i class="fa-solid fa-angle-left"></i></a>
-  </div>
-    <div class="register-header">
-      <div class="register-logo">
+  <section class="login-container ">
+    <!-- ปุ่มลูกศรกลับ -->
+    <div class="back-arrow">
+      <a href="../../page/into/into.html"> <i class="fa-solid fa-angle-left"></i></a>
+    </div>
+    <div class="login-header">
+      <div class="login-logo">
         <i class="fa-solid fa-steering-wheel"></i>
         <h1>DriveSafe</h1>
       </div>
-      <div class="register-svg">
+      <div class="login-svg">
         <img src="../../img/City driver-rafiki.svg" alt="By My Car Image">
       </div>
     </div>
 
     <!-- ฟอร์มล็อกอิน -->
-    <div class="register-form-container">
-    <form action="/register" method="post" class="register-form">
+    <div class="login-form-container">
+      <form action="/login" method="post" class="login-form">
         <div class="form-group">
-            <label for="username">ชื่อผู้ใช้:</label>
-            <input type="text" id="username" name="username" placeholder="" required>
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email" placeholder="" required>
         </div>
         <div class="form-group">
-            <label for="email">อีเมล:</label>
-            <input type="email" id="email" name="email" placeholder="" required>
+          <label for="password">รหัสผ่าน:</label>
+          <input type="password" id="password" name="password" placeholder="" required>
+        </div>
+        <div class="form-links">
+          <a href="../../page/forgot/forgot.html">ลืมรหัสผ่าน?</a>
         </div>
         <div class="form-group">
-            <label for="password">รหัสผ่าน:</label>
-            <input type="password" id="password" name="password" placeholder="" required>
-        </div>
-        <div class="form-group">
-            <label for="confirm-password">ยืนยันรหัสผ่าน:</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="" required>
+          <button type="submit" class="btn-login">เข้าสู่ระบบ</button>
         </div>
 
-        <!-- ช่องกดยินยอม -->
-        <div class="form-group">
-            <label>
-                <input type="checkbox" name="agreement" required>
-                ฉันเห็นด้วยกับ <a href="/terms">ข้อกำหนดและเงื่อนไข</a> เเละ <a href="/privacy-policy">นโยบายความเป็นส่วนตัว</a>.
-            </label>
-        </div>
+      </form>
 
-        <div class="form-group">
-            <button type="submit" class="btn-register">ลงทะเบียน</button>
-        </div>
-    </form>
       <!-- ปุ่มล็อกอินด้วย Google, LINE, Facebook -->
       <div class="social-title">
         <hr><span>หรือ เข้าสู่ระบบด้วย</span>
         <hr>
       </div>
 
-
       <div class="social-login">
+
+        <!-- ปุ่มกดล็อคอิน Google -->
         <button class="btn-google"><img src="../../img/google.png" alt=""></button>
+        <!-- ปุ่มกดล็อคอิน line -->
         <button class="btn-line"><i class="fa-brands fa-line"></i></button>
+        <!-- ปุ่มกดล็อกอินด้วย facebook -->
         <button class="btn-facebook"><i class="fa-brands fa-facebook"></i></button>
+
+
       </div>
       <div class="sign-up-title">
-        <h1>มีบัญชีอยู่แล้ว? </h1>
-        <a href="../../page/login/login.php">เข้าสู่ระบบ</a>
+        <h1>ยังไม่มีบัญชี? </h1>
+        <a href="../../page/register/register.html">ลงทะเบียนตอนนี้เลย</a>
       </div>
     </div>
   </section>
